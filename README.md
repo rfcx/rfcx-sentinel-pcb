@@ -1,6 +1,8 @@
 #RFCx PCB
 @gibsjose @jesse-millwood @rfcx
 
+![PCB](./Images/angle.png)
+
 ##Description
 This repository contains the **KiCad** project and related libraries for the RFCx PCB designed by Jesse Millwood and Joe Gibson for the GVSU (Grand Valley State University) RFCx Senior Project design, *Project Necromancer*.
 
