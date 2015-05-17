@@ -1,0 +1,496 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Jdevices
+LIBS:Microcontrolers
+LIBS:JICs
+LIBS:JMech
+LIBS:RFCx-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 12
+Title "ADC to I2C"
+Date ""
+Rev "A"
+Comp "Project Necromancer"
+Comment1 "RFCx"
+Comment2 "GVSU"
+Comment3 "Sponsors:"
+Comment4 ""
+$EndDescr
+Text HLabel 1700 1100 0    60   Input ~ 0
+Input-Voltage
+Wire Wire Line
+	1700 1100 2100 1100
+Wire Wire Line
+	2100 1100 2100 1200
+$Comp
+L Res R15
+U 1 1 55121812
+P 2100 1350
+F 0 "R15" H 2100 1250 60  0000 C CNN
+F 1 "1540" H 2100 1450 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2100 1350 60  0001 C CNN
+F 3 "" H 2100 1350 60  0000 C CNN
+F 4 "P1.54KCCT-ND" H 2100 1350 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2100 1350 60  0001 C CNN "Distributor"
+	1    2100 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R16
+U 1 1 55121880
+P 2100 1850
+F 0 "R16" H 2100 1750 60  0000 C CNN
+F 1 "2100" H 2100 1950 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2100 1850 60  0001 C CNN
+F 3 "" H 2100 1850 60  0000 C CNN
+F 4 "P2.10KCCT-ND" H 2100 1850 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2100 1850 60  0001 C CNN "Distributor"
+	1    2100 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1500 2100 1700
+Wire Wire Line
+	2100 1600 5000 1600
+Connection ~ 2100 1600
+Wire Wire Line
+	2100 2000 2100 2100
+$Comp
+L GND #PWR017
+U 1 1 551218BD
+P 2100 2100
+F 0 "#PWR017" H 2100 1850 50  0001 C CNN
+F 1 "GND" H 2100 1950 50  0000 C CNN
+F 2 "" H 2100 2100 60  0000 C CNN
+F 3 "" H 2100 2100 60  0000 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+Text HLabel 1850 4250 0    60   Input ~ 0
+Input-Current-H
+Text HLabel 1850 4050 0    60   Input ~ 0
+Input-Current-L
+$Comp
+L LTC6800 U4
+U 1 1 5512197D
+P 2550 4150
+F 0 "U4" H 2850 4300 60  0000 C CNN
+F 1 "LTC6800" H 2750 4150 50  0000 C CNN
+F 2 "SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 2550 3800 60  0001 C CNN
+F 3 "" H 2550 3800 60  0000 C CNN
+F 4 "LTC6800HMS8#PBF-ND" H 2550 4150 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2550 4150 60  0001 C CNN "Distributor"
+	1    2550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4250 2450 4250
+Wire Wire Line
+	2450 4050 1850 4050
+Wire Wire Line
+	2700 3900 2700 3800
+Wire Wire Line
+	3100 4150 4300 4150
+$Comp
+L Res R21
+U 1 1 55121A70
+P 3300 4350
+F 0 "R21" H 3300 4250 60  0000 C CNN
+F 1 "2550" H 3300 4450 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3300 4350 60  0001 C CNN
+F 3 "" H 3300 4350 60  0000 C CNN
+F 4 "311-2.55KCRCT-ND" H 3300 4350 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 3300 4350 60  0001 C CNN "Distributor"
+	1    3300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4300 2900 4650
+Wire Wire Line
+	2900 4350 3150 4350
+Wire Wire Line
+	3450 4350 3600 4350
+Wire Wire Line
+	3600 4150 3600 4650
+Connection ~ 3600 4150
+$Comp
+L Cap C10
+U 1 1 55121AB5
+P 3300 4650
+F 0 "C10" H 3300 4550 60  0000 C CNN
+F 1 "0.1uF" H 3300 4750 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3300 4650 60  0001 C CNN
+F 3 "" H 3300 4650 60  0000 C CNN
+F 4 "311-1245-1-ND" H 3300 4650 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 3300 4650 60  0001 C CNN "Distributor"
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 4350
+Wire Wire Line
+	3600 4650 3450 4650
+Connection ~ 3600 4350
+$Comp
+L Res R19
+U 1 1 55121BF0
+P 2950 4950
+F 0 "R19" H 2950 4850 60  0000 C CNN
+F 1 "200k" H 2950 5050 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2950 4950 60  0001 C CNN
+F 3 "" H 2950 4950 60  0000 C CNN
+F 4 "P200KACT-ND" H 2950 4950 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2950 4950 60  0001 C CNN "Distributor"
+	1    2950 4950
+	0    1    1    0   
+$EndComp
+Connection ~ 2900 4650
+Wire Wire Line
+	2950 5100 2950 5300
+$Comp
+L GND #PWR018
+U 1 1 55121C54
+P 2950 5300
+F 0 "#PWR018" H 2950 5050 50  0001 C CNN
+F 1 "GND" H 2950 5150 50  0000 C CNN
+F 2 "" H 2950 5300 60  0000 C CNN
+F 3 "" H 2950 5300 60  0000 C CNN
+	1    2950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 55121C6E
+P 2800 5300
+F 0 "#PWR019" H 2800 5050 50  0001 C CNN
+F 1 "GND" H 2800 5150 50  0000 C CNN
+F 2 "" H 2800 5300 60  0000 C CNN
+F 3 "" H 2800 5300 60  0000 C CNN
+	1    2800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 55121C88
+P 2650 5300
+F 0 "#PWR020" H 2650 5050 50  0001 C CNN
+F 1 "GND" H 2650 5150 50  0000 C CNN
+F 2 "" H 2650 5300 60  0000 C CNN
+F 3 "" H 2650 5300 60  0000 C CNN
+	1    2650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4350 2800 5300
+Wire Wire Line
+	2650 5300 2650 4650
+Wire Wire Line
+	2650 4650 2700 4650
+Wire Wire Line
+	2700 4650 2700 4400
+Wire Wire Line
+	2900 4650 3150 4650
+Wire Wire Line
+	2950 4800 2950 4650
+Connection ~ 2950 4650
+Text HLabel 1850 6200 0    60   Input ~ 0
+Output-Current-H
+Text HLabel 1850 6000 0    60   Input ~ 0
+Output-Current-L
+$Comp
+L LTC6800 U5
+U 1 1 55122DC6
+P 2550 6100
+F 0 "U5" H 2850 6250 60  0000 C CNN
+F 1 "LTC6800" H 2750 6100 50  0000 C CNN
+F 2 "SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 2550 5750 60  0001 C CNN
+F 3 "" H 2550 5750 60  0000 C CNN
+F 4 "LTC6800HMS8#PBF-ND" H 2550 6100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2550 6100 60  0001 C CNN "Distributor"
+	1    2550 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6200 2450 6200
+Wire Wire Line
+	2450 6000 1850 6000
+Wire Wire Line
+	2700 5850 2700 5750
+Wire Wire Line
+	3100 6100 4700 6100
+$Comp
+L Res R22
+U 1 1 55122DD3
+P 3300 6300
+F 0 "R22" H 3300 6200 60  0000 C CNN
+F 1 "Res" H 3300 6400 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3300 6300 60  0001 C CNN
+F 3 "" H 3300 6300 60  0000 C CNN
+F 4 "311-2.55KCRCT-ND" H 3300 6300 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 3300 6300 60  0001 C CNN "Distributor"
+	1    3300 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6250 2900 6600
+Wire Wire Line
+	2900 6300 3150 6300
+Wire Wire Line
+	3450 6300 3600 6300
+Wire Wire Line
+	3600 6100 3600 6600
+Connection ~ 3600 6100
+$Comp
+L Cap C11
+U 1 1 55122DDE
+P 3300 6600
+F 0 "C11" H 3300 6500 60  0000 C CNN
+F 1 "0.1uF" H 3300 6700 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3300 6600 60  0001 C CNN
+F 3 "" H 3300 6600 60  0000 C CNN
+F 4 "311-1245-1-ND" H 3300 6600 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 3300 6600 60  0001 C CNN "Distributor"
+	1    3300 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 6300
+Wire Wire Line
+	3600 6600 3450 6600
+Connection ~ 3600 6300
+$Comp
+L Res R20
+U 1 1 55122DE7
+P 2950 6900
+F 0 "R20" H 2950 6800 60  0000 C CNN
+F 1 "200k" H 2950 7000 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2950 6900 60  0001 C CNN
+F 3 "" H 2950 6900 60  0000 C CNN
+F 4 "P200KACT-ND" H 2950 6900 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2950 6900 60  0001 C CNN "Distributor"
+	1    2950 6900
+	0    1    1    0   
+$EndComp
+Connection ~ 2900 6600
+Wire Wire Line
+	2950 7050 2950 7250
+$Comp
+L GND #PWR021
+U 1 1 55122DEF
+P 2950 7250
+F 0 "#PWR021" H 2950 7000 50  0001 C CNN
+F 1 "GND" H 2950 7100 50  0000 C CNN
+F 2 "" H 2950 7250 60  0000 C CNN
+F 3 "" H 2950 7250 60  0000 C CNN
+	1    2950 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 55122DF5
+P 2800 7250
+F 0 "#PWR022" H 2800 7000 50  0001 C CNN
+F 1 "GND" H 2800 7100 50  0000 C CNN
+F 2 "" H 2800 7250 60  0000 C CNN
+F 3 "" H 2800 7250 60  0000 C CNN
+	1    2800 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 55122DFB
+P 2650 7250
+F 0 "#PWR023" H 2650 7000 50  0001 C CNN
+F 1 "GND" H 2650 7100 50  0000 C CNN
+F 2 "" H 2650 7250 60  0000 C CNN
+F 3 "" H 2650 7250 60  0000 C CNN
+	1    2650 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6300 2800 7250
+Wire Wire Line
+	2650 7250 2650 6600
+Wire Wire Line
+	2650 6600 2700 6600
+Wire Wire Line
+	2700 6600 2700 6350
+Wire Wire Line
+	2900 6600 3150 6600
+Wire Wire Line
+	2950 6750 2950 6600
+Connection ~ 2950 6600
+Text HLabel 1700 2400 0    60   Input ~ 0
+Output-Voltage
+Wire Wire Line
+	1700 2400 2100 2400
+Wire Wire Line
+	2100 2400 2100 2500
+$Comp
+L Res R17
+U 1 1 551235E4
+P 2100 2650
+F 0 "R17" H 2100 2550 60  0000 C CNN
+F 1 "1540" H 2100 2750 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2100 2650 60  0001 C CNN
+F 3 "" H 2100 2650 60  0000 C CNN
+F 4 "P1.54KCCT-ND" H 2100 2650 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2100 2650 60  0001 C CNN "Distributor"
+	1    2100 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R18
+U 1 1 551235EA
+P 2100 3150
+F 0 "R18" H 2100 3050 60  0000 C CNN
+F 1 "2100" H 2100 3250 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2100 3150 60  0001 C CNN
+F 3 "" H 2100 3150 60  0000 C CNN
+F 4 "P2.10KCCT-ND" H 2100 3150 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 2100 3150 60  0001 C CNN "Distributor"
+	1    2100 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 2800 2100 3000
+Wire Wire Line
+	2100 2900 3950 2900
+Connection ~ 2100 2900
+Wire Wire Line
+	2100 3300 2100 3400
+$Comp
+L GND #PWR024
+U 1 1 551235F5
+P 2100 3400
+F 0 "#PWR024" H 2100 3150 50  0001 C CNN
+F 1 "GND" H 2100 3250 50  0000 C CNN
+F 2 "" H 2100 3400 60  0000 C CNN
+F 3 "" H 2100 3400 60  0000 C CNN
+	1    2100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADS1015 U6
+U 1 1 55123971
+P 6850 2150
+F 0 "U6" H 6600 1700 60  0000 C CNN
+F 1 "ADS1015" H 6950 1700 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm" H 6750 2300 60  0001 C CNN
+F 3 "" H 6750 2300 60  0000 C CNN
+F 4 "296-25227-1-ND" H 6850 2150 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 6850 2150 60  0001 C CNN "Distributor"
+	1    6850 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1600 5000 1850
+Wire Wire Line
+	5000 1850 6150 1850
+Wire Wire Line
+	3950 2900 3950 2050
+Wire Wire Line
+	3950 2050 6150 2050
+Wire Wire Line
+	4300 4150 4300 2250
+Wire Wire Line
+	4300 2250 6150 2250
+Wire Wire Line
+	4700 6100 4700 2450
+Wire Wire Line
+	4700 2450 6150 2450
+Wire Wire Line
+	7550 1850 7850 1850
+Wire Wire Line
+	7850 1850 7850 1600
+$Comp
+L +3.3V #PWR025
+U 1 1 551253F7
+P 7850 1600
+F 0 "#PWR025" H 7850 1450 50  0001 C CNN
+F 1 "+3.3V" H 7850 1740 50  0000 C CNN
+F 2 "" H 7850 1600 60  0000 C CNN
+F 3 "" H 7850 1600 60  0000 C CNN
+	1    7850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 55125418
+P 7900 2700
+F 0 "#PWR026" H 7900 2450 50  0001 C CNN
+F 1 "GND" H 7900 2550 50  0000 C CNN
+F 2 "" H 7900 2700 60  0000 C CNN
+F 3 "" H 7900 2700 60  0000 C CNN
+	1    7900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2700 7900 2450
+Wire Wire Line
+	7900 2450 7550 2450
+Wire Wire Line
+	7550 2050 8150 2050
+Text HLabel 8150 2050 2    60   Input ~ 0
+Alert
+Wire Wire Line
+	7550 2150 8150 2150
+Text HLabel 8150 2150 2    60   Input ~ 0
+SCL
+Wire Wire Line
+	7550 2250 8150 2250
+Text HLabel 8150 2250 2    60   Input ~ 0
+SDA
+$Comp
+L +3.3V #PWR027
+U 1 1 5525B2FD
+P 2700 3800
+F 0 "#PWR027" H 2700 3650 50  0001 C CNN
+F 1 "+3.3V" H 2700 3940 50  0000 C CNN
+F 2 "" H 2700 3800 60  0000 C CNN
+F 3 "" H 2700 3800 60  0000 C CNN
+	1    2700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR028
+U 1 1 5525B379
+P 2700 5750
+F 0 "#PWR028" H 2700 5600 50  0001 C CNN
+F 1 "+3.3V" H 2700 5890 50  0000 C CNN
+F 2 "" H 2700 5750 60  0000 C CNN
+F 3 "" H 2700 5750 60  0000 C CNN
+	1    2700 5750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

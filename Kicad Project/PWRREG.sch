@@ -1,0 +1,457 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Jdevices
+LIBS:Microcontrolers
+LIBS:JICs
+LIBS:JMech
+LIBS:RFCx-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 12
+Title "Power Regulation"
+Date ""
+Rev "A"
+Comp "Project Necromancer"
+Comment1 "RFCx"
+Comment2 "GVSU"
+Comment3 "Sponsors:"
+Comment4 ""
+$EndDescr
+$Comp
+L LMR61428 U10
+U 1 1 5518D819
+P 5750 2400
+F 0 "U10" H 5300 1800 60  0000 C CNN
+F 1 "LMR61428" H 6050 1800 60  0000 C CNN
+F 2 "SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 5750 2400 60  0001 C CNN
+F 3 "" H 5750 2400 60  0000 C CNN
+F 4 "LMR61428XMM/NOPBCT-ND" H 5750 2400 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 5750 2400 60  0001 C CNN "Distributor"
+	1    5750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cap-Pol C16
+U 1 1 5518D8CE
+P 3600 2500
+F 0 "C16" H 3600 2400 60  0000 C CNN
+F 1 "22uF Tant" H 3600 2600 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3600 2500 60  0001 C CNN
+F 3 "" H 3600 2500 60  0000 C CNN
+F 4 "511-1506-1-ND" H 3600 2500 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 3600 2500 60  0001 C CNN "Distributor"
+	1    3600 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 2350 3600 2100
+Wire Wire Line
+	4450 2100 5050 2100
+Wire Wire Line
+	5050 2300 4700 2300
+Wire Wire Line
+	4700 2300 4700 3200
+$Comp
+L GND #PWR041
+U 1 1 5518DA83
+P 4700 3200
+F 0 "#PWR041" H 4700 2950 50  0001 C CNN
+F 1 "GND" H 4700 3050 50  0000 C CNN
+F 2 "" H 4700 3200 60  0000 C CNN
+F 3 "" H 4700 3200 60  0000 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR042
+U 1 1 5518DA9A
+P 3600 3200
+F 0 "#PWR042" H 3600 2950 50  0001 C CNN
+F 1 "GND" H 3600 3050 50  0000 C CNN
+F 2 "" H 3600 3200 60  0000 C CNN
+F 3 "" H 3600 3200 60  0000 C CNN
+	1    3600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR043
+U 1 1 5518DAB1
+P 4900 3200
+F 0 "#PWR043" H 4900 2950 50  0001 C CNN
+F 1 "GND" H 4900 3050 50  0000 C CNN
+F 2 "" H 4900 3200 60  0000 C CNN
+F 3 "" H 4900 3200 60  0000 C CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3200 4900 2400
+Wire Wire Line
+	4900 2400 5050 2400
+Wire Wire Line
+	3600 3200 3600 2650
+$Comp
+L Diode-Shottky D5
+U 1 1 5518DB23
+P 5650 1650
+F 0 "D5" H 5650 1750 60  0000 C CNN
+F 1 "Diode-Shottky" H 5650 1550 60  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 5650 1650 60  0001 C CNN
+F 3 "" H 5650 1650 60  0000 C CNN
+F 4 "1N5819HW-FDICT-ND" H 5650 1650 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 5650 1650 60  0001 C CNN "Distributor"
+	1    5650 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1650 5500 1650
+Wire Wire Line
+	4950 1650 4950 2100
+Connection ~ 4950 2100
+Wire Wire Line
+	5800 1650 6650 1650
+Wire Wire Line
+	6650 1650 6650 2100
+Wire Wire Line
+	6450 2100 8350 2100
+Wire Wire Line
+	6450 2200 6600 2200
+Wire Wire Line
+	6600 2200 6600 2350
+Wire Wire Line
+	6450 2300 6900 2300
+$Comp
+L Res R33
+U 1 1 5518DBDC
+P 6600 2500
+F 0 "R33" H 6600 2400 60  0000 C CNN
+F 1 "200k" H 6600 2600 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6600 2500 60  0001 C CNN
+F 3 "" H 6600 2500 60  0000 C CNN
+F 4 "P200KACT-ND" H 6600 2500 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 6600 2500 60  0001 C CNN "Distributor"
+	1    6600 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 6600 2300
+Wire Wire Line
+	6450 2700 6600 2700
+Wire Wire Line
+	6600 2700 6600 2650
+$Comp
+L Res R34
+U 1 1 5518E19A
+P 7200 2350
+F 0 "R34" H 7200 2250 60  0000 C CNN
+F 1 "49.9" H 7200 2450 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7200 2350 60  0001 C CNN
+F 3 "" H 7200 2350 60  0000 C CNN
+F 4 "P49.9KCCT-ND" H 7200 2350 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 7200 2350 60  0001 C CNN "Distributor"
+	1    7200 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2100 7200 2200
+Connection ~ 6650 2100
+$Comp
+L Cap C19
+U 1 1 5518E252
+P 7200 2750
+F 0 "C19" H 7200 2650 60  0000 C CNN
+F 1 "1uF" H 7200 2850 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7200 2750 60  0001 C CNN
+F 3 "" H 7200 2750 60  0000 C CNN
+F 4 "1276-1275-1-ND" H 7200 2750 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 7200 2750 60  0001 C CNN "Distributor"
+	1    7200 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2500 7200 2600
+Wire Wire Line
+	7200 2550 6900 2550
+Wire Wire Line
+	6900 2550 6900 2300
+Connection ~ 7200 2550
+Wire Wire Line
+	7200 2900 7200 3200
+$Comp
+L GND #PWR044
+U 1 1 5518E308
+P 7200 3200
+F 0 "#PWR044" H 7200 2950 50  0001 C CNN
+F 1 "GND" H 7200 3050 50  0000 C CNN
+F 2 "" H 7200 3200 60  0000 C CNN
+F 3 "" H 7200 3200 60  0000 C CNN
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R35
+U 1 1 5518E39A
+P 7650 2350
+F 0 "R35" H 7650 2250 60  0000 C CNN
+F 1 "150k" H 7650 2450 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7650 2350 60  0001 C CNN
+F 3 "" H 7650 2350 60  0000 C CNN
+F 4 "P150KCCT-ND" H 7650 2350 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 7650 2350 60  0001 C CNN "Distributor"
+	1    7650 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R36
+U 1 1 5518E3F1
+P 7650 2750
+F 0 "R36" H 7650 2650 60  0000 C CNN
+F 1 "49.9k" H 7650 2850 60  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7650 2750 60  0001 C CNN
+F 3 "" H 7650 2750 60  0000 C CNN
+F 4 "P49.9KCCT-ND" H 7650 2750 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 7650 2750 60  0001 C CNN "Distributor"
+	1    7650 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Cap C20
+U 1 1 5518E425
+P 8050 2300
+F 0 "C20" H 8050 2200 60  0000 C CNN
+F 1 "39pF" H 8050 2400 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8050 2300 60  0001 C CNN
+F 3 "" H 8050 2300 60  0000 C CNN
+F 4 "1276-1769-1-ND" H 8050 2300 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 8050 2300 60  0001 C CNN "Distributor"
+	1    8050 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 2500 7650 2600
+Wire Wire Line
+	7650 2550 8050 2550
+Connection ~ 7650 2550
+Wire Wire Line
+	7650 2900 7650 3200
+$Comp
+L GND #PWR045
+U 1 1 5518E546
+P 7650 3200
+F 0 "#PWR045" H 7650 2950 50  0001 C CNN
+F 1 "GND" H 7650 3050 50  0000 C CNN
+F 2 "" H 7650 3200 60  0000 C CNN
+F 3 "" H 7650 3200 60  0000 C CNN
+	1    7650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2100 7650 2200
+Connection ~ 7200 2100
+$Comp
+L Cap-Pol C21
+U 1 1 5518E666
+P 8350 2500
+F 0 "C21" H 8350 2400 60  0000 C CNN
+F 1 "68uF Tant" H 8350 2600 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8350 2500 60  0001 C CNN
+F 3 "" H 8350 2500 60  0000 C CNN
+F 4 "478-8414-1-ND" H 8350 2500 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 8350 2500 60  0001 C CNN "Distributor"
+	1    8350 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 1850 8350 2350
+Connection ~ 7650 2100
+Wire Wire Line
+	8350 2650 8350 3200
+$Comp
+L GND #PWR046
+U 1 1 5518E6FA
+P 8350 3200
+F 0 "#PWR046" H 8350 2950 50  0001 C CNN
+F 1 "GND" H 8350 3050 50  0000 C CNN
+F 2 "" H 8350 3200 60  0000 C CNN
+F 3 "" H 8350 3200 60  0000 C CNN
+	1    8350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2850 6600 2850
+Text Label 6500 2850 0    60   ~ 0
+LM_FB
+Text Label 7700 2550 0    60   ~ 0
+LM_FB
+Wire Wire Line
+	8050 2150 8050 2100
+Connection ~ 8050 2100
+Wire Wire Line
+	8050 2550 8050 2450
+Connection ~ 3600 2100
+Text HLabel 3300 3300 0    60   Input ~ 0
+Vin
+Connection ~ 8350 2100
+$Comp
+L +5V #PWR047
+U 1 1 5518F80F
+P 8350 1850
+F 0 "#PWR047" H 8350 1700 50  0001 C CNN
+F 1 "+5V" H 8350 1990 50  0000 C CNN
+F 2 "" H 8350 1850 60  0000 C CNN
+F 3 "" H 8350 1850 60  0000 C CNN
+	1    8350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L2
+U 1 1 55193CA4
+P 4200 2100
+F 0 "L2" H 4200 2200 50  0000 C CNN
+F 1 "6.8uH" H 4200 2050 50  0000 C CNN
+F 2 "RFCX:Ind_6x6" H 4200 2100 60  0001 C CNN
+F 3 "" H 4200 2100 60  0000 C CNN
+F 4 "SRN6045-6R8YCT-ND " H 4200 2100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 4200 2100 60  0001 C CNN "Distributor"
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2100 3400 4800
+Wire Wire Line
+	3300 3300 3400 3300
+Connection ~ 3400 3300
+Wire Wire Line
+	3400 2100 3950 2100
+$Comp
+L SM72238 U9
+U 1 1 551BE770
+P 5700 4800
+F 0 "U9" H 5550 4500 60  0000 C CNN
+F 1 "SM72238" H 5700 4950 60  0000 C CNN
+F 2 "SMD_Packages:DPAK-2" H 5700 4800 60  0001 C CNN
+F 3 "" H 5700 4800 60  0000 C CNN
+F 4 "296-39811-5-ND " H 5700 4800 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 5700 4800 60  0001 C CNN "Distributor"
+	1    5700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4800 5300 4800
+Wire Wire Line
+	5700 5250 5700 5950
+$Comp
+L GND #PWR048
+U 1 1 551BE893
+P 5700 5950
+F 0 "#PWR048" H 5700 5700 50  0001 C CNN
+F 1 "GND" H 5700 5800 50  0000 C CNN
+F 2 "" H 5700 5950 60  0000 C CNN
+F 3 "" H 5700 5950 60  0000 C CNN
+	1    5700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cap C18
+U 1 1 551BE98B
+P 6350 5050
+F 0 "C18" H 6350 4950 60  0000 C CNN
+F 1 "1uF" H 6350 5150 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6350 5050 60  0001 C CNN
+F 3 "" H 6350 5050 60  0000 C CNN
+F 4 "1276-1275-1-ND" H 6350 5050 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 6350 5050 60  0001 C CNN "Distributor"
+	1    6350 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Cap C17
+U 1 1 551BE9FA
+P 4900 5100
+F 0 "C17" H 4900 5000 60  0000 C CNN
+F 1 "1uF" H 4900 5200 60  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4900 5100 60  0001 C CNN
+F 3 "" H 4900 5100 60  0000 C CNN
+F 4 "1276-1275-1-ND" H 4900 5100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 4900 5100 60  0001 C CNN "Distributor"
+	1    4900 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 4950 4900 4800
+Connection ~ 4900 4800
+Wire Wire Line
+	6100 4800 6800 4800
+Wire Wire Line
+	6800 4800 6800 4700
+Wire Wire Line
+	6350 4900 6350 4800
+Connection ~ 6350 4800
+$Comp
+L GND #PWR049
+U 1 1 551BEAF4
+P 6350 5950
+F 0 "#PWR049" H 6350 5700 50  0001 C CNN
+F 1 "GND" H 6350 5800 50  0000 C CNN
+F 2 "" H 6350 5950 60  0000 C CNN
+F 3 "" H 6350 5950 60  0000 C CNN
+	1    6350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6000 6350 5200
+Wire Wire Line
+	4900 5250 4900 5950
+$Comp
+L GND #PWR050
+U 1 1 551BEBC8
+P 4900 5950
+F 0 "#PWR050" H 4900 5700 50  0001 C CNN
+F 1 "GND" H 4900 5800 50  0000 C CNN
+F 2 "" H 4900 5950 60  0000 C CNN
+F 3 "" H 4900 5950 60  0000 C CNN
+	1    4900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR051
+U 1 1 551BED02
+P 6800 4700
+F 0 "#PWR051" H 6800 4550 50  0001 C CNN
+F 1 "+3.3V" H 6800 4840 50  0000 C CNN
+F 2 "" H 6800 4700 60  0000 C CNN
+F 3 "" H 6800 4700 60  0000 C CNN
+	1    6800 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

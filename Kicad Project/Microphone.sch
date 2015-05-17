@@ -1,0 +1,268 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Jdevices
+LIBS:Microcontrolers
+LIBS:JICs
+LIBS:RFCx-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 8
+Title ""
+Date ""
+Rev "A"
+Comp "Project Necromancer"
+Comment1 "RFCx"
+Comment2 "GVSU"
+Comment3 "Sponsors:"
+Comment4 ""
+$EndDescr
+$Comp
+L Barrel J?
+U 1 1 551DEF6A
+P 9200 2950
+F 0 "J?" H 9050 3100 60  0000 C CNN
+F 1 "Barrel" H 9150 2800 60  0000 C CNN
+F 2 "" H 9200 2950 60  0000 C CNN
+F 3 "" H 9200 2950 60  0000 C CNN
+	1    9200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2900 8700 2900
+Wire Wire Line
+	8700 2900 8700 2800
+$Comp
+L X2Y C?
+U 1 1 551DF022
+P 7650 3100
+F 0 "C?" H 7500 2950 60  0000 C CNN
+F 1 "0.1uF" H 7800 2950 60  0000 C CNN
+F 2 "" H 7650 3100 60  0000 C CNN
+F 3 "" H 7650 3100 60  0000 C CNN
+F 4 "311-1245-1-ND" H 7650 3100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 7650 3100 60  0001 C CNN "Distributor"
+	1    7650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3100 7950 3100
+Wire Wire Line
+	7950 3100 7950 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF0EA
+P 7950 3200
+F 0 "#PWR?" H 7950 2950 50  0001 C CNN
+F 1 "GND" H 7950 3050 50  0000 C CNN
+F 2 "" H 7950 3200 60  0000 C CNN
+F 3 "" H 7950 3200 60  0000 C CNN
+	1    7950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3100 7350 3100
+Wire Wire Line
+	7350 3100 7350 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF124
+P 7350 3200
+F 0 "#PWR?" H 7350 2950 50  0001 C CNN
+F 1 "GND" H 7350 3050 50  0000 C CNN
+F 2 "" H 7350 3200 60  0000 C CNN
+F 3 "" H 7350 3200 60  0000 C CNN
+	1    7350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3400 8700 3400
+Wire Wire Line
+	8700 3400 8700 2950
+Wire Wire Line
+	8700 2950 8900 2950
+Wire Wire Line
+	8900 3000 8800 3000
+Wire Wire Line
+	8800 3000 8800 3450
+$Comp
+L GND #PWR?
+U 1 1 551DF15F
+P 8800 3450
+F 0 "#PWR?" H 8800 3200 50  0001 C CNN
+F 1 "GND" H 8800 3300 50  0000 C CNN
+F 2 "" H 8800 3450 60  0000 C CNN
+F 3 "" H 8800 3450 60  0000 C CNN
+	1    8800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L X2Y C?
+U 1 1 551DF2C1
+P 6750 3100
+F 0 "C?" H 6600 2950 60  0000 C CNN
+F 1 "1uF" H 6900 2950 60  0000 C CNN
+F 2 "" H 6750 3100 60  0000 C CNN
+F 3 "" H 6750 3100 60  0000 C CNN
+F 4 "709-1108-1-ND" H 6750 3100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 6750 3100 60  0001 C CNN "Distributor"
+	1    6750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3100 7050 3100
+Wire Wire Line
+	7050 3100 7050 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF2C9
+P 7050 3200
+F 0 "#PWR?" H 7050 2950 50  0001 C CNN
+F 1 "GND" H 7050 3050 50  0000 C CNN
+F 2 "" H 7050 3200 60  0000 C CNN
+F 3 "" H 7050 3200 60  0000 C CNN
+	1    7050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3100 6450 3100
+Wire Wire Line
+	6450 3100 6450 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF2D1
+P 6450 3200
+F 0 "#PWR?" H 6450 2950 50  0001 C CNN
+F 1 "GND" H 6450 3050 50  0000 C CNN
+F 2 "" H 6450 3200 60  0000 C CNN
+F 3 "" H 6450 3200 60  0000 C CNN
+	1    6450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L X2Y C?
+U 1 1 551DF4C6
+P 5850 3100
+F 0 "C?" H 5700 2950 60  0000 C CNN
+F 1 "1uF" H 6000 2950 60  0000 C CNN
+F 2 "" H 5850 3100 60  0000 C CNN
+F 3 "" H 5850 3100 60  0000 C CNN
+F 4 "709-1108-1-ND" H 5850 3100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 5850 3100 60  0001 C CNN "Distributor"
+	1    5850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF4CE
+P 6150 3200
+F 0 "#PWR?" H 6150 2950 50  0001 C CNN
+F 1 "GND" H 6150 3050 50  0000 C CNN
+F 2 "" H 6150 3200 60  0000 C CNN
+F 3 "" H 6150 3200 60  0000 C CNN
+	1    6150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3100 5550 3100
+Wire Wire Line
+	5550 3100 5550 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF4D6
+P 5550 3200
+F 0 "#PWR?" H 5550 2950 50  0001 C CNN
+F 1 "GND" H 5550 3050 50  0000 C CNN
+F 2 "" H 5550 3200 60  0000 C CNN
+F 3 "" H 5550 3200 60  0000 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L X2Y C?
+U 1 1 551DF4DC
+P 4950 3100
+F 0 "C?" H 4800 2950 60  0000 C CNN
+F 1 "0.1uF" H 5100 2950 60  0000 C CNN
+F 2 "" H 4950 3100 60  0000 C CNN
+F 3 "" H 4950 3100 60  0000 C CNN
+F 4 "311-1245-1-ND" H 4950 3100 60  0001 C CNN "Distributor #"
+F 5 "DigiKey" H 4950 3100 60  0001 C CNN "Distributor"
+	1    4950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3100 5250 3100
+Wire Wire Line
+	5250 3100 5250 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF4E4
+P 5250 3200
+F 0 "#PWR?" H 5250 2950 50  0001 C CNN
+F 1 "GND" H 5250 3050 50  0000 C CNN
+F 2 "" H 5250 3200 60  0000 C CNN
+F 3 "" H 5250 3200 60  0000 C CNN
+	1    5250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3100 4650 3100
+Wire Wire Line
+	4650 3100 4650 3200
+$Comp
+L GND #PWR?
+U 1 1 551DF4EC
+P 4650 3200
+F 0 "#PWR?" H 4650 2950 50  0001 C CNN
+F 1 "GND" H 4650 3050 50  0000 C CNN
+F 2 "" H 4650 3200 60  0000 C CNN
+F 3 "" H 4650 3200 60  0000 C CNN
+	1    4650 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 2800
+Connection ~ 7650 3400
+Connection ~ 6750 3400
+Connection ~ 5850 3400
+Wire Wire Line
+	8700 2800 4950 2800
+Connection ~ 6750 2800
+Connection ~ 5850 2800
+Text Notes 9700 3050 0    60   ~ 0
+To Phone \nMic Input
+$EndSCHEMATC

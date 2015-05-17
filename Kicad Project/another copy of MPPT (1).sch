@@ -1,0 +1,361 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Jdevices
+LIBS:Microcontrolers
+LIBS:JICs
+LIBS:RFCx-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 11
+Title ""
+Date ""
+Rev "A"
+Comp "Project Necromancer"
+Comment1 "RFCx"
+Comment2 "GVSU"
+Comment3 "Sponsors:"
+Comment4 ""
+$EndDescr
+$Comp
+L SPV1040 U12
+U 1 1 55128722
+P 5500 3150
+AR Path="/5511BA41/55128722" Ref="U12"  Part="1" 
+AR Path="/551EFCDA/55128722" Ref="U12"  Part="1" 
+F 0 "U12" H 5000 2850 60  0000 C CNN
+F 1 "SPV1040" H 5850 2850 60  0000 C CNN
+F 2 "" H 5500 3150 60  0000 C CNN
+F 3 "" H 5500 3150 60  0000 C CNN
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode-Shottky D2
+U 1 1 5512887C
+P 5500 2350
+AR Path="/5511BA41/5512887C" Ref="D2"  Part="1" 
+AR Path="/551EFCDA/5512887C" Ref="D2"  Part="1" 
+F 0 "D2" H 5500 2450 60  0000 C CNN
+F 1 "Diode-Shottky" H 5500 2250 60  0000 C CNN
+F 2 "" H 5500 2350 60  0000 C CNN
+F 3 "" H 5500 2350 60  0000 C CNN
+	1    5500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 551288A3
+P 4150 2350
+AR Path="/5511BA41/551288A3" Ref="L1"  Part="1" 
+AR Path="/551EFCDA/551288A3" Ref="L1"  Part="1" 
+F 0 "L1" H 4150 2450 50  0000 C CNN
+F 1 "INDUCTOR_SMALL" H 4150 2300 50  0000 C CNN
+F 2 "" H 4150 2350 60  0000 C CNN
+F 3 "" H 4150 2350 60  0000 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2950 3750 2950
+Wire Wire Line
+	3750 2350 3750 2950
+Wire Wire Line
+	3750 2950 3750 3100
+Wire Wire Line
+	3200 2350 3450 2350
+Wire Wire Line
+	3450 2350 3750 2350
+Wire Wire Line
+	3750 2350 3900 2350
+Wire Wire Line
+	3750 3100 4750 3100
+Connection ~ 3750 2950
+Wire Wire Line
+	4750 3300 4450 3300
+Wire Wire Line
+	4450 3300 4450 3700
+$Comp
+L GND #PWR24
+U 1 1 55128905
+P 4450 3700
+AR Path="/5511BA41/55128905" Ref="#PWR24"  Part="1" 
+AR Path="/551EFCDA/55128905" Ref="#PWR24"  Part="1" 
+F 0 "#PWR24" H 4450 3450 50  0001 C CNN
+F 1 "GND" H 4450 3550 50  0000 C CNN
+F 2 "" H 4450 3700 60  0000 C CNN
+F 3 "" H 4450 3700 60  0000 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cap C9
+U 1 1 55128A2E
+P 6650 3000
+AR Path="/5511BA41/55128A2E" Ref="C9"  Part="1" 
+AR Path="/551EFCDA/55128A2E" Ref="C9"  Part="1" 
+F 0 "C9" H 6650 2900 60  0000 C CNN
+F 1 "Cap" H 6650 3100 60  0000 C CNN
+F 2 "" H 6650 3000 60  0000 C CNN
+F 3 "" H 6650 3000 60  0000 C CNN
+	1    6650 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 2900 6400 2900
+Wire Wire Line
+	6400 2900 6400 2800
+Wire Wire Line
+	6250 3100 6400 3100
+Wire Wire Line
+	6400 3100 6400 3200
+Wire Wire Line
+	6400 3200 6650 3200
+Wire Wire Line
+	6650 3200 6800 3200
+Wire Wire Line
+	6650 3150 6650 3200
+Connection ~ 6650 3200
+Wire Wire Line
+	6650 2850 6650 2800
+$Comp
+L Res R11
+U 1 1 55128BB8
+P 6950 2800
+AR Path="/5511BA41/55128BB8" Ref="R11"  Part="1" 
+AR Path="/551EFCDA/55128BB8" Ref="R11"  Part="1" 
+F 0 "R11" H 6950 2700 60  0000 C CNN
+F 1 "Res" H 6950 2900 60  0000 C CNN
+F 2 "" H 6950 2800 60  0000 C CNN
+F 3 "" H 6950 2800 60  0000 C CNN
+	1    6950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R12
+U 1 1 55128C35
+P 6950 3200
+AR Path="/5511BA41/55128C35" Ref="R12"  Part="1" 
+AR Path="/551EFCDA/55128C35" Ref="R12"  Part="1" 
+F 0 "R12" H 6950 3100 60  0000 C CNN
+F 1 "Res" H 6950 3300 60  0000 C CNN
+F 2 "" H 6950 3200 60  0000 C CNN
+F 3 "" H 6950 3200 60  0000 C CNN
+	1    6950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R13
+U 1 1 55128C7B
+P 7900 2600
+AR Path="/5511BA41/55128C7B" Ref="R13"  Part="1" 
+AR Path="/551EFCDA/55128C7B" Ref="R13"  Part="1" 
+F 0 "R13" H 7900 2500 60  0000 C CNN
+F 1 "Res" H 7900 2700 60  0000 C CNN
+F 2 "" H 7900 2600 60  0000 C CNN
+F 3 "" H 7900 2600 60  0000 C CNN
+	1    7900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3200 7100 3200
+Wire Wire Line
+	8050 2600 8150 2600
+Wire Wire Line
+	8150 2600 8400 2600
+Wire Wire Line
+	8400 2600 8850 2600
+$Comp
+L Res R14
+U 1 1 55128D1A
+P 8400 3000
+AR Path="/5511BA41/55128D1A" Ref="R14"  Part="1" 
+AR Path="/551EFCDA/55128D1A" Ref="R14"  Part="1" 
+F 0 "R14" H 8400 2900 60  0000 C CNN
+F 1 "Res" H 8400 3100 60  0000 C CNN
+F 2 "" H 8400 3000 60  0000 C CNN
+F 3 "" H 8400 3000 60  0000 C CNN
+	1    8400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R15
+U 1 1 55128EA3
+P 8400 3400
+AR Path="/5511BA41/55128EA3" Ref="R15"  Part="1" 
+AR Path="/551EFCDA/55128EA3" Ref="R15"  Part="1" 
+F 0 "R15" H 8400 3300 60  0000 C CNN
+F 1 "Res" H 8400 3500 60  0000 C CNN
+F 2 "" H 8400 3400 60  0000 C CNN
+F 3 "" H 8400 3400 60  0000 C CNN
+	1    8400 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 3150 8400 3200
+Wire Wire Line
+	8400 3200 8400 3250
+Wire Wire Line
+	8400 3200 8200 3200
+Wire Wire Line
+	8200 3200 8200 3350
+Wire Wire Line
+	8200 3350 6350 3350
+Wire Wire Line
+	6350 3350 6350 3300
+Wire Wire Line
+	6350 3300 6250 3300
+Connection ~ 8400 3200
+Wire Wire Line
+	8400 2600 8400 2850
+Connection ~ 8150 2600
+Wire Wire Line
+	5700 2350 6650 2350
+Wire Wire Line
+	4600 2800 4600 2350
+Wire Wire Line
+	4400 2350 4600 2350
+Wire Wire Line
+	4600 2350 5300 2350
+Connection ~ 3750 2350
+$Comp
+L Cap C8
+U 1 1 55129164
+P 3450 2650
+AR Path="/5511BA41/55129164" Ref="C8"  Part="1" 
+AR Path="/551EFCDA/55129164" Ref="C8"  Part="1" 
+F 0 "C8" H 3450 2550 60  0000 C CNN
+F 1 "Cap" H 3450 2750 60  0000 C CNN
+F 2 "" H 3450 2650 60  0000 C CNN
+F 3 "" H 3450 2650 60  0000 C CNN
+	1    3450 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2500 3450 2350
+Wire Wire Line
+	3450 2800 3450 3650
+$Comp
+L GND #PWR23
+U 1 1 551291F9
+P 3450 3650
+AR Path="/5511BA41/551291F9" Ref="#PWR23"  Part="1" 
+AR Path="/551EFCDA/551291F9" Ref="#PWR23"  Part="1" 
+F 0 "#PWR23" H 3450 3400 50  0001 C CNN
+F 1 "GND" H 3450 3500 50  0000 C CNN
+F 2 "" H 3450 3650 60  0000 C CNN
+F 3 "" H 3450 3650 60  0000 C CNN
+	1    3450 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 2350
+Text HLabel 3200 2350 0    60   Input ~ 0
+Vin
+Wire Wire Line
+	6400 2800 6650 2800
+Wire Wire Line
+	6650 2800 6800 2800
+Connection ~ 6650 2800
+Wire Wire Line
+	6250 2800 6250 2600
+Wire Wire Line
+	6250 2600 6650 2600
+Wire Wire Line
+	6650 2600 7350 2600
+Wire Wire Line
+	7350 2600 7600 2600
+Wire Wire Line
+	7600 2600 7750 2600
+Wire Wire Line
+	7350 2800 7100 2800
+Wire Wire Line
+	7350 2600 7350 2800
+Connection ~ 7350 2600
+Wire Wire Line
+	6650 2350 6650 2600
+Connection ~ 6650 2600
+$Comp
+L GND #PWR26
+U 1 1 55129C5E
+P 8400 3700
+AR Path="/5511BA41/55129C5E" Ref="#PWR26"  Part="1" 
+AR Path="/551EFCDA/55129C5E" Ref="#PWR26"  Part="1" 
+F 0 "#PWR26" H 8400 3450 50  0001 C CNN
+F 1 "GND" H 8400 3550 50  0000 C CNN
+F 2 "" H 8400 3700 60  0000 C CNN
+F 3 "" H 8400 3700 60  0000 C CNN
+	1    8400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3700 8400 3550
+$Comp
+L Cap C10
+U 1 1 5512A389
+P 7600 2800
+AR Path="/5511BA41/5512A389" Ref="C10"  Part="1" 
+AR Path="/551EFCDA/5512A389" Ref="C10"  Part="1" 
+F 0 "C10" H 7600 2700 60  0000 C CNN
+F 1 "Cap" H 7600 2900 60  0000 C CNN
+F 2 "" H 7600 2800 60  0000 C CNN
+F 3 "" H 7600 2800 60  0000 C CNN
+	1    7600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR25
+U 1 1 5512A3B3
+P 7600 3000
+AR Path="/5511BA41/5512A3B3" Ref="#PWR25"  Part="1" 
+AR Path="/551EFCDA/5512A3B3" Ref="#PWR25"  Part="1" 
+F 0 "#PWR25" H 7600 2750 50  0001 C CNN
+F 1 "GND" H 7600 2850 50  0000 C CNN
+F 2 "" H 7600 3000 60  0000 C CNN
+F 3 "" H 7600 3000 60  0000 C CNN
+	1    7600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3000 7600 2950
+Connection ~ 7600 2600
+Connection ~ 8400 2600
+Text HLabel 8850 2600 2    60   Input ~ 0
+MPPT-Vout
+Wire Wire Line
+	7600 2650 7600 2600
+Wire Wire Line
+	8150 2600 8150 3200
+Connection ~ 4600 2350
+Wire Wire Line
+	4600 2800 4750 2800
+$EndSCHEMATC
