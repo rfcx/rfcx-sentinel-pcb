@@ -1,36 +1,12 @@
-# Ignore list for Eagle, a PCB layout tool
+#gitignore for KiCad, stolen from https://github.com/ContextualElectronics/CurrentSinkOrSwim/blob/master/.gitignore
 
-# Backup files
-*.s#?
-*.b#?
-*.l#?
+#That guy also has a video explaining his gitignore for KiCad here: https://contextualelectronics.com/kicad-tutorial/module-1-introduction-to-kicad/using-gitignore-kicad-repo/
 
-# Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# comment the following line if you want to have your project file included.
-eagle.epf
-
-# CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
-
-*.dri
-*.drl
-*.gpi
-*.pls
-
-*.drd
-*.drd.*
-
-*.info
-
-*.eps
+*.bak
+*.bck
+*.raw
+*.log
+*.dcm
+*.kicad_pcb-bak
+*autosave*
+*cache*
