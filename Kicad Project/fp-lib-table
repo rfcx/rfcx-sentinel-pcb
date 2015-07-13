@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name RFCX)(type KiCad)(uri ${KIPRJMOD}/RFCX.pretty)(options "")(descr ""))
-)
