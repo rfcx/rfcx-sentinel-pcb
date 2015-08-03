@@ -177,7 +177,7 @@ F 0 "R30" H 7200 2250 60  0000 C CNN
 F 1 "49.9" H 7200 2450 60  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 7200 2350 60  0001 C CNN
 F 3 "" H 7200 2350 60  0000 C CNN
-F 4 "P49.9KCCT-ND" H 7200 2350 60  0001 C CNN "Distributor #"
+F 4 "P49.9CCT-ND" H 7200 2350 60  0001 C CNN "Distributor #"
 F 5 "DigiKey" H 7200 2350 60  0001 C CNN "Distributor"
 	1    7200 2350
 	0    1    1    0   

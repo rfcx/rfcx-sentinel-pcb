@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 8 8
 Title "Phone Interface"
 Date "June 2015"
 Rev "B"
@@ -303,8 +303,6 @@ Wire Wire Line
 	5350 2550 5350 2600
 Wire Wire Line
 	3150 2200 4600 2200
-Wire Wire Line
-	3150 1950 5150 1950
 $Comp
 L Cap C18
 U 1 1 551AB996
@@ -407,14 +405,6 @@ F 5 "DigiKey" H 2650 1800 60  0001 C CNN "Distributor"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 2000 3150 2000
-Wire Wire Line
-	3150 2000 3150 1950
-Wire Wire Line
-	3000 2150 3150 2150
-Wire Wire Line
-	3150 2150 3150 2200
-Wire Wire Line
 	3000 2250 3000 3200
 $Comp
 L GND #PWR059
@@ -489,4 +479,67 @@ F 3 "" H 1950 1750 60  0000 C CNN
 $EndComp
 Text Notes 5600 1500 0    100  ~ 0
 Serial To USB Circuit
+Wire Wire Line
+	3150 2200 3150 2000
+Wire Wire Line
+	3150 2000 3000 2000
+Wire Wire Line
+	3000 2150 3250 2150
+Wire Wire Line
+	3250 2150 3250 1950
+Wire Wire Line
+	3250 1950 5150 1950
+$Comp
+L Res R?
+U 1 1 55B11CE6
+P 10200 2450
+F 0 "R?" H 10200 2350 60  0000 C CNN
+F 1 "4.7k" H 10200 2550 60  0000 C CNN
+F 2 "" H 10200 2450 60  0000 C CNN
+F 3 "" H 10200 2450 60  0000 C CNN
+	1    10200 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55B12A37
+P 10200 2925
+F 0 "R?" H 10200 2825 60  0000 C CNN
+F 1 "10k" H 10200 3025 60  0000 C CNN
+F 2 "" H 10200 2925 60  0000 C CNN
+F 3 "" H 10200 2925 60  0000 C CNN
+	1    10200 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 2700 10200 2700
+Wire Wire Line
+	10200 2600 10200 2775
+Connection ~ 10200 2700
+$Comp
+L +5V #PWR?
+U 1 1 55B13316
+P 10200 1650
+F 0 "#PWR?" H 10200 1500 50  0001 C CNN
+F 1 "+5V" H 10200 1790 50  0000 C CNN
+F 2 "" H 10200 1650 60  0000 C CNN
+F 3 "" H 10200 1650 60  0000 C CNN
+	1    10200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1650 10200 2300
+$Comp
+L GND #PWR?
+U 1 1 55B13B3F
+P 10200 3250
+F 0 "#PWR?" H 10200 3000 50  0001 C CNN
+F 1 "GND" H 10200 3100 50  0000 C CNN
+F 2 "" H 10200 3250 60  0000 C CNN
+F 3 "" H 10200 3250 60  0000 C CNN
+	1    10200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3250 10200 3075
 $EndSCHEMATC

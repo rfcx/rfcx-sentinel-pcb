@@ -150,7 +150,7 @@ L Res R2
 U 1 1 551BFEFE
 P 4900 1300
 F 0 "R2" H 4900 1200 60  0000 C CNN
-F 1 "0.5,1W" H 4900 1400 60  0000 C CNN
+F 1 "0.51 ,1W" H 4900 1400 60  0000 C CNN
 F 2 "Resistors_SMD:R_2010_HandSoldering" H 4900 1300 60  0001 C CNN
 F 3 "" H 4900 1300 60  0000 C CNN
 F 4 "RCWE.51FCT-ND" H 4900 1300 60  0001 C CNN "Distributor #"
@@ -168,14 +168,6 @@ Text Label 4700 600  0    60   ~ 0
 Output_AL
 Text Label 8350 4800 0    60   ~ 0
 OverTemp
-$Sheet
-S 8950 5850 1050 450 
-U 5511BDC7
-F0 "Phone Interface" 60
-F1 "PhoneInterface.sch" 60
-F2 "FTDI-TX" I R 10000 6150 60 
-F3 "FTDI-RX" I R 10000 6000 60 
-$EndSheet
 $Sheet
 S 5150 5350 1150 900 
 U 551F7088
@@ -483,5 +475,13 @@ S 1350 6000 1200 775
 U 5594A1A6
 F0 "Mechanical" 60
 F1 "Mechanical.sch" 60
+$EndSheet
+$Sheet
+S 8950 5850 1050 450 
+U 5511BDC7
+F0 "Phone Interface" 60
+F1 "PhoneInterface.sch" 60
+F2 "FTDI-TX" I R 10000 6150 60 
+F3 "FTDI-RX" I R 10000 6000 60 
 $EndSheet
 $EndSCHEMATC
