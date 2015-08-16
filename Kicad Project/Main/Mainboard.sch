@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -33,19 +32,18 @@ LIBS:Jdevices
 LIBS:JICs
 LIBS:JMech
 LIBS:Microcontrolers
-LIBS:Mainboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title "Top Level"
-Date "June 2015"
-Rev "B"
+Date "August 2015"
+Rev "C"
 Comp "Project Necromancer - Main Board"
-Comment1 "RFCx"
-Comment2 "GVSU"
-Comment3 "Sponsors:"
+Comment1 "Designed By: Jesse Millwood"
+Comment2 ""
+Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
@@ -57,13 +55,10 @@ F2 "AT-RXD" I R 10150 4000 60
 F3 "AT-TXD" I R 10150 4100 60 
 F4 "AT-SDA" I L 8850 4100 60 
 F5 "AT-SCL" I L 8850 4000 60 
-F6 "AT-BAT1-STAT" I L 8850 3500 60 
-F7 "AT-BAT2-STAT" I L 8850 3600 60 
-F8 "AT-Alert" I L 8850 3700 60 
-F9 "HIH_AlarmH" I L 8850 5100 60 
-F10 "HIH_AlarmL" I L 8850 4950 60 
-F11 "Temp_Alarm" I L 8850 4800 60 
-F12 "PPM_STAT" I R 10150 3525 60 
+F6 "AT-Alert" I L 8850 3700 60 
+F7 "HIH_AlarmH" I L 8850 5100 60 
+F8 "HIH_AlarmL" I L 8850 4950 60 
+F9 "Temp_Alarm" I L 8850 4800 60 
 $EndSheet
 $Sheet
 S 4600 3750 2000 900 
@@ -79,16 +74,6 @@ F7 "Output-Voltage" I R 6600 3900 60
 F8 "Alert" I R 6600 4300 60 
 F9 "SCL" I R 6600 4400 60 
 F10 "SDA" I R 6600 4500 60 
-$EndSheet
-$Sheet
-S 6550 2100 1300 700 
-U 5512C932
-F0 "Battery Management" 60
-F1 "BatteryManagement.sch" 60
-F2 "Pack1-Status" I R 7850 2550 60 
-F3 "Vin" I L 6550 2250 60 
-F4 "Pack2-Status" I R 7850 2650 60 
-F5 "Battery-Vout" I R 7850 2250 60 
 $EndSheet
 $Comp
 L Res R3
@@ -179,56 +164,6 @@ F4 "ENV_OS" I R 6300 5750 60
 F5 "ENV_AL_L" I R 6300 5900 60 
 F6 "ENV_AL_H" I R 6300 6050 60 
 $EndSheet
-$Comp
-L LTC4412 U1
-U 1 1 551C98F6
-P 7200 1300
-F 0 "U1" H 6950 1000 60  0000 C CNN
-F 1 "LTC4412" H 7300 1000 60  0000 C CNN
-F 2 "Housings_SOT-23_SOT-143_TSOT-6:TSOT-6-MK06A_Handsoldering" H 7200 1300 60  0001 C CNN
-F 3 "" H 7200 1300 60  0000 C CNN
-F 4 "LTC4412ES6#TRPBFCT-ND" H 7200 1300 60  0001 C CNN "Distributor #"
-F 5 "DigiKey" H 7200 1300 60  0001 C CNN "Distributor"
-	1    7200 1300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 551C9C8C
-P 7800 1650
-F 0 "#PWR03" H 7800 1400 50  0001 C CNN
-F 1 "GND" H 7800 1500 50  0000 C CNN
-F 2 "" H 7800 1650 60  0000 C CNN
-F 3 "" H 7800 1650 60  0000 C CNN
-	1    7800 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Q_PMOS_DGS Q1
-U 1 1 551C9EE8
-P 6150 900
-F 0 "Q1" V 6350 1050 50  0000 R CNN
-F 1 "FDC638" V 6100 1300 50  0000 R CNN
-F 2 "RFCX:FDC-SOT-23-6" H 6350 1000 29  0001 C CNN
-F 3 "" H 6150 900 60  0000 C CNN
-F 4 "FDC638PCT-ND" H 6150 900 60  0001 C CNN "Distributor #"
-F 5 "DigiKey" H 6150 900 60  0001 C CNN "Distributor"
-	1    6150 900 
-	0    1    -1   0   
-$EndComp
-$Comp
-L Diode-Shottky D1
-U 1 1 551CAE3F
-P 5800 1700
-F 0 "D1" H 5800 1800 60  0000 C CNN
-F 1 "1N5819" H 5800 1600 60  0000 C CNN
-F 2 "Diodes_SMD:SOD-123" H 5800 1700 60  0001 C CNN
-F 3 "" H 5800 1700 60  0000 C CNN
-F 4 "1N5819HW-FDICT-ND" H 5800 1700 60  0001 C CNN "Distributor #"
-F 5 "DigiKey" H 5800 1700 60  0001 C CNN "Distributor"
-	1    5800 1700
-	0    -1   -1   0   
-$EndComp
 Text Label 5150 1300 0    60   ~ 0
 Regulators_In
 $Comp
@@ -258,17 +193,19 @@ F 5 "DigiKey" H 4175 3125 60  0001 C CNN "Distributor"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 2250 4450 3900
+	4450 1700 4450 3125
+Wire Wire Line
+	4450 3125 4450 3900
 Wire Wire Line
 	4450 3900 4600 3900
 Wire Wire Line
-	10000 6000 10400 6000
+	10000 5950 10400 5950
 Wire Wire Line
-	10400 6000 10400 4100
+	10400 5950 10400 4100
 Wire Wire Line
-	10500 4000 10500 6150
+	10500 4000 10500 6050
 Wire Wire Line
-	10500 6150 10000 6150
+	10500 6050 10000 6050
 Wire Wire Line
 	6600 4300 7650 4300
 Wire Wire Line
@@ -280,7 +217,11 @@ Wire Wire Line
 Wire Wire Line
 	7750 4000 8850 4000
 Wire Wire Line
-	6600 4500 7850 4500
+	6600 4500 7300 4500
+Wire Wire Line
+	7300 4500 7400 4500
+Wire Wire Line
+	7400 4500 7850 4500
 Wire Wire Line
 	7850 4500 7850 4100
 Wire Wire Line
@@ -295,25 +236,11 @@ Wire Wire Line
 	7100 3800 7100 3600
 Wire Wire Line
 	7400 3600 7400 3800
-Wire Wire Line
-	7850 2650 8600 2650
-Wire Wire Line
-	8600 2650 8600 3600
-Wire Wire Line
-	8600 3600 8850 3600
-Wire Wire Line
-	8850 3500 8700 3500
-Wire Wire Line
-	8700 3500 8700 2550
-Wire Wire Line
-	8700 2550 7850 2550
-Wire Wire Line
-	8250 1150 8250 2250
-Wire Wire Line
-	8250 2250 7850 2250
 Connection ~ 7200 4400
 Wire Wire Line
-	4400 1300 4750 1300
+	4400 1300 4700 1300
+Wire Wire Line
+	4700 1300 4750 1300
 Wire Wire Line
 	5100 1300 5100 700 
 Wire Wire Line
@@ -327,7 +254,9 @@ Connection ~ 4700 1300
 Wire Wire Line
 	6700 4000 6600 4000
 Wire Wire Line
-	6700 3600 6700 4000
+	6700 3600 6700 3900
+Wire Wire Line
+	6700 3900 6700 4000
 Wire Wire Line
 	6700 3900 6600 3900
 Wire Wire Line
@@ -344,14 +273,18 @@ Wire Wire Line
 Wire Wire Line
 	6300 5450 7200 5450
 Wire Wire Line
-	7200 5450 7200 4400
+	7200 4400 7200 5450
 Wire Wire Line
 	6300 5600 7300 5600
 Wire Wire Line
 	7300 5600 7300 4500
 Connection ~ 7300 4500
 Wire Wire Line
-	6600 4400 7750 4400
+	6600 4400 7100 4400
+Wire Wire Line
+	7100 4400 7200 4400
+Wire Wire Line
+	7200 4400 7750 4400
 Wire Wire Line
 	6300 5750 7450 5750
 Wire Wire Line
@@ -369,45 +302,21 @@ Wire Wire Line
 Wire Wire Line
 	7750 5100 8850 5100
 Wire Wire Line
-	7700 1300 7800 1300
+	5050 1300 5100 1300
 Wire Wire Line
-	7800 1300 7800 1650
-Wire Wire Line
-	7800 1450 7700 1450
-Connection ~ 7800 1450
-Wire Wire Line
-	7700 1150 8550 1150
-Wire Wire Line
-	5050 1300 5800 1300
-Wire Wire Line
-	5800 800  5800 1550
-Wire Wire Line
-	5800 800  5950 800 
-Wire Wire Line
-	6150 1100 6150 1150
-Wire Wire Line
-	6150 1150 6700 1150
-Connection ~ 5800 1300
-Wire Wire Line
-	5800 1850 5800 2250
-Connection ~ 5800 2250
-Wire Wire Line
-	6350 800  7850 800 
-Wire Wire Line
-	7850 800  7850 1150
-Connection ~ 7850 1150
+	5100 1300 7300 1300
 Wire Wire Line
 	10150 4000 10500 4000
 Wire Wire Line
 	10400 4100 10150 4100
 Wire Wire Line
-	4450 2250 6550 2250
-Wire Wire Line
 	1875 4000 2500 4000
 Wire Wire Line
 	2500 4000 2500 3125
 Wire Wire Line
-	2500 3125 4025 3125
+	2500 3125 3900 3125
+Wire Wire Line
+	3900 3125 4025 3125
 Wire Wire Line
 	4325 3125 4450 3125
 Connection ~ 4450 3125
@@ -431,45 +340,13 @@ Connector to\nMPPT/Solar Panel Board
 Wire Wire Line
 	4600 4000 3900 4000
 Wire Wire Line
-	3900 3125 3900 4100
+	3900 3125 3900 4000
+Wire Wire Line
+	3900 4000 3900 4100
 Connection ~ 3900 3125
 Wire Wire Line
 	3900 4100 4600 4100
 Connection ~ 3900 4000
-Wire Wire Line
-	6700 1300 5975 1300
-Wire Wire Line
-	5975 1300 5975 2250
-Connection ~ 5975 2250
-Wire Wire Line
-	10150 3525 10500 3525
-Wire Wire Line
-	10500 3525 10500 1875
-Wire Wire Line
-	10500 1875 6575 1875
-Wire Wire Line
-	6575 1875 6575 1450
-Wire Wire Line
-	6575 1450 6700 1450
-$Comp
-L Res R5
-U 1 1 5595EC3E
-P 8550 1475
-F 0 "R5" H 8550 1375 60  0000 C CNN
-F 1 "470k" H 8550 1575 60  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 8550 1475 60  0001 C CNN
-F 3 "" H 8550 1475 60  0000 C CNN
-F 4 "311-470KCRCT-ND" H 8550 1475 60  0001 C CNN "Distributor #"
-F 5 "DigiKey" H 8550 1475 60  0001 C CNN "Distributor"
-	1    8550 1475
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	8550 1625 8550 1875
-Connection ~ 8550 1875
-Wire Wire Line
-	8550 1150 8550 1325
-Connection ~ 8250 1150
 $Sheet
 S 1350 6000 1200 775 
 U 5594A1A6
@@ -481,7 +358,52 @@ S 8950 5850 1050 450
 U 5511BDC7
 F0 "Phone Interface" 60
 F1 "PhoneInterface.sch" 60
-F2 "FTDI-TX" I R 10000 6150 60 
-F3 "FTDI-RX" I R 10000 6000 60 
+F2 "FTDI-TX" I R 10000 6050 60 
+F3 "FTDI-RX" I R 10000 5950 60 
+F4 "FTDI-RI" I R 10000 6150 60 
 $EndSheet
+Wire Wire Line
+	10000 6150 10600 6150
+Wire Wire Line
+	10600 6150 10600 3900
+Wire Wire Line
+	10600 3900 10200 3900
+$Sheet
+S 7300 1200 1150 600 
+U 55D07AEA
+F0 "Battery Charging" 60
+F1 "BatteryCharging.sch" 60
+F2 "BAT1-Stat2" I R 8450 1400 60 
+F3 "BAT1-Stat1" I R 8450 1300 60 
+F4 "BAT2-Stat2" I R 8450 1700 60 
+F5 "BAT2-Stat1" I R 8450 1600 60 
+F6 "Bat-In" I L 7300 1700 60 
+F7 "Bat-Out" I L 7300 1300 60 
+$EndSheet
+Wire Wire Line
+	8450 1700 10300 1700
+Wire Wire Line
+	10300 1700 10300 3400
+Wire Wire Line
+	10300 3400 10200 3400
+Wire Wire Line
+	8450 1600 10400 1600
+Wire Wire Line
+	10400 1600 10400 3500
+Wire Wire Line
+	10400 3500 10200 3500
+Wire Wire Line
+	8450 1400 10500 1400
+Wire Wire Line
+	10500 1400 10500 3600
+Wire Wire Line
+	10500 3600 10200 3600
+Wire Wire Line
+	8450 1300 10650 1300
+Wire Wire Line
+	10650 1300 10650 3700
+Wire Wire Line
+	10650 3700 10200 3700
+Wire Wire Line
+	7300 1700 4450 1700
 $EndSCHEMATC

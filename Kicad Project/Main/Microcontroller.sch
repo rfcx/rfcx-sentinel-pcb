@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -33,17 +32,16 @@ LIBS:Jdevices
 LIBS:JICs
 LIBS:JMech
 LIBS:Microcontrolers
-LIBS:Mainboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 8
 Title "Microcontroller Interface"
-Date "June 2015"
-Rev "B"
+Date "August 2015"
+Rev "C"
 Comp "Project Necromancer - Main Board"
-Comment1 "RFCx"
+Comment1 "Designed By: Jesse Millwood"
 Comment2 "GVSU"
 Comment3 "Sponsors:"
 Comment4 ""
@@ -447,8 +445,6 @@ Wire Wire Line
 	7025 1625 7025 1675
 Wire Wire Line
 	7025 2750 7025 2425
-Text HLabel 6125 2550 2    60   Input ~ 0
-PPM_STAT
 Wire Wire Line
 	5050 2550 6125 2550
 Wire Wire Line

@@ -1,0 +1,635 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Jdevices
+LIBS:JICs
+LIBS:JMech
+LIBS:Microcontrolers
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 8
+Title "Battery Charging and Load Sharing"
+Date "August 2015"
+Rev "C"
+Comp "Project Necromancer - Main Board"
+Comment1 "Designed By: Jesse Millwood"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP73871 U?
+U 1 1 55D08FEE
+P 5500 1950
+F 0 "U?" H 5150 1300 60  0000 C CNN
+F 1 "MCP73871" H 5700 1300 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 5500 2100 60  0001 C CNN
+F 3 "" H 5500 2100 60  0000 C CNN
+F 4 "DigiKey" H 5500 1950 60  0001 C CNN "Distributor"
+F 5 "MCP73871-2CCI/ML-ND" H 5500 1950 60  0001 C CNN "Distributor #"
+	1    5500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55D090BC
+P 6250 2900
+F 0 "#PWR?" H 6250 2650 50  0001 C CNN
+F 1 "GND" H 6250 2750 50  0000 C CNN
+F 2 "" H 6250 2900 60  0000 C CNN
+F 3 "" H 6250 2900 60  0000 C CNN
+	1    6250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2900 6250 2200
+Wire Wire Line
+	6250 2200 6100 2200
+$Comp
+L Res R?
+U 1 1 55D090D7
+P 6450 2100
+F 0 "R?" H 6450 2000 60  0000 C CNN
+F 1 "Res" H 6450 2200 60  0000 C CNN
+F 2 "" H 6450 2100 60  0000 C CNN
+F 3 "" H 6450 2100 60  0000 C CNN
+	1    6450 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D090FE
+P 6750 2100
+F 0 "R?" H 6750 2000 60  0000 C CNN
+F 1 "Res" H 6750 2200 60  0000 C CNN
+F 2 "" H 6750 2100 60  0000 C CNN
+F 3 "" H 6750 2100 60  0000 C CNN
+	1    6750 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 1900 6450 1900
+Wire Wire Line
+	6450 1900 6450 1950
+Wire Wire Line
+	6100 1800 6750 1800
+Wire Wire Line
+	6750 1800 6750 1950
+$Comp
+L GND #PWR?
+U 1 1 55D0912D
+P 6450 2900
+F 0 "#PWR?" H 6450 2650 50  0001 C CNN
+F 1 "GND" H 6450 2750 50  0000 C CNN
+F 2 "" H 6450 2900 60  0000 C CNN
+F 3 "" H 6450 2900 60  0000 C CNN
+	1    6450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55D09147
+P 6750 2900
+F 0 "#PWR?" H 6750 2650 50  0001 C CNN
+F 1 "GND" H 6750 2750 50  0000 C CNN
+F 2 "" H 6750 2900 60  0000 C CNN
+F 3 "" H 6750 2900 60  0000 C CNN
+	1    6750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2900 6450 2250
+Wire Wire Line
+	6750 2900 6750 2250
+$Comp
+L GND #PWR?
+U 1 1 55D091A7
+P 7050 2900
+F 0 "#PWR?" H 7050 2650 50  0001 C CNN
+F 1 "GND" H 7050 2750 50  0000 C CNN
+F 2 "" H 7050 2900 60  0000 C CNN
+F 3 "" H 7050 2900 60  0000 C CNN
+	1    7050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1950 7050 1700
+Wire Wire Line
+	7050 1700 6100 1700
+$Comp
+L Li-ion(2Cell) B?
+U 1 1 55D091E4
+P 7600 2000
+F 0 "B?" H 7425 1775 60  0000 C CNN
+F 1 "Li-ion(2Cell)" H 8000 1775 60  0000 C CNN
+F 2 "" H 7600 2000 60  0000 C CNN
+F 3 "" H 7600 2000 60  0000 C CNN
+	1    7600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1500 7650 1500
+Wire Wire Line
+	7650 1500 7650 1700
+$Comp
+L GND #PWR?
+U 1 1 55D09264
+P 7650 2900
+F 0 "#PWR?" H 7650 2650 50  0001 C CNN
+F 1 "GND" H 7650 2750 50  0000 C CNN
+F 2 "" H 7650 2900 60  0000 C CNN
+F 3 "" H 7650 2900 60  0000 C CNN
+	1    7650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2900 7650 2300
+Wire Wire Line
+	6100 1400 8750 1400
+Wire Wire Line
+	8750 1400 8750 1850
+$Comp
+L Diode-Shottky D?
+U 1 1 55D09365
+P 8750 2000
+F 0 "D?" H 8750 2100 60  0000 C CNN
+F 1 "Diode-Shottky" H 8750 1900 60  0000 C CNN
+F 2 "" H 8750 2000 60  0000 C CNN
+F 3 "" H 8750 2000 60  0000 C CNN
+	1    8750 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0A4B5
+P 4650 1600
+F 0 "R?" H 4650 1500 60  0000 C CNN
+F 1 "1k" H 4650 1700 60  0000 C CNN
+F 2 "" H 4650 1600 60  0000 C CNN
+F 3 "" H 4650 1600 60  0000 C CNN
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1600 4900 1600
+Wire Wire Line
+	2950 1400 4900 1400
+Wire Wire Line
+	4450 1400 4450 1600
+Wire Wire Line
+	4450 1600 4500 1600
+Wire Wire Line
+	4900 1750 4250 1750
+Wire Wire Line
+	4900 1850 4250 1850
+Text HLabel 4250 1750 0    60   Input ~ 0
+BAT1-Stat2
+Text HLabel 4250 1850 0    60   Input ~ 0
+BAT1-Stat1
+Wire Wire Line
+	4900 1950 4700 1950
+Wire Wire Line
+	4700 1950 4700 2250
+Wire Wire Line
+	4700 2250 4900 2250
+Wire Wire Line
+	4900 2150 4700 2150
+Connection ~ 4700 2150
+Wire Wire Line
+	4900 2050 4700 2050
+Connection ~ 4700 2050
+Wire Wire Line
+	3500 2100 4700 2100
+Connection ~ 4700 2100
+Wire Wire Line
+	3500 1400 3500 2150
+Connection ~ 4450 1400
+$Comp
+L Res R?
+U 1 1 55D0ACBC
+P 3500 2300
+F 0 "R?" H 3500 2200 60  0000 C CNN
+F 1 "270k" H 3500 2400 60  0000 C CNN
+F 2 "" H 3500 2300 60  0000 C CNN
+F 3 "" H 3500 2300 60  0000 C CNN
+	1    3500 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2500 3500 2500
+Wire Wire Line
+	3500 2450 3500 2550
+Connection ~ 3500 2100
+$Comp
+L Res R?
+U 1 1 55D0AFAE
+P 3500 2700
+F 0 "R?" H 3500 2600 60  0000 C CNN
+F 1 "100k" H 3500 2800 60  0000 C CNN
+F 2 "" H 3500 2700 60  0000 C CNN
+F 3 "" H 3500 2700 60  0000 C CNN
+	1    3500 2700
+	0    1    1    0   
+$EndComp
+Connection ~ 3500 2500
+Wire Wire Line
+	3500 2850 3500 2900
+$Comp
+L GND #PWR?
+U 1 1 55D0B04A
+P 3500 2900
+F 0 "#PWR?" H 3500 2650 50  0001 C CNN
+F 1 "GND" H 3500 2750 50  0000 C CNN
+F 2 "" H 3500 2900 60  0000 C CNN
+F 3 "" H 3500 2900 60  0000 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0B676
+P 7050 2100
+F 0 "R?" H 7050 2000 60  0000 C CNN
+F 1 "1k" H 7050 2200 60  0000 C CNN
+F 2 "" H 7050 2100 60  0000 C CNN
+F 3 "" H 7050 2100 60  0000 C CNN
+	1    7050 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0B6A3
+P 7050 2600
+F 0 "R?" H 7050 2500 60  0000 C CNN
+F 1 "10k" H 7050 2700 60  0000 C CNN
+F 2 "" H 7050 2600 60  0000 C CNN
+F 3 "" H 7050 2600 60  0000 C CNN
+	1    7050 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0B722
+P 7350 2600
+F 0 "R?" H 7350 2500 60  0000 C CNN
+F 1 "NTC" H 7350 2700 60  0000 C CNN
+F 2 "" H 7350 2600 60  0000 C CNN
+F 3 "" H 7350 2600 60  0000 C CNN
+F 4 "DigiKey" H 7350 2600 60  0001 C CNN "Distributor"
+F 5 "~" H 7350 2600 60  0001 C CNN "Distributor #"
+	1    7350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 2250 7050 2450
+Wire Wire Line
+	7050 2750 7050 2900
+$Comp
+L GND #PWR?
+U 1 1 55D0B7E2
+P 7350 2900
+F 0 "#PWR?" H 7350 2650 50  0001 C CNN
+F 1 "GND" H 7350 2750 50  0000 C CNN
+F 2 "" H 7350 2900 60  0000 C CNN
+F 3 "" H 7350 2900 60  0000 C CNN
+	1    7350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2900 7350 2750
+Wire Wire Line
+	7350 2450 7350 2350
+Wire Wire Line
+	7350 2350 7050 2350
+Connection ~ 7050 2350
+$Comp
+L MCP73871 U?
+U 1 1 55D0C662
+P 5500 4350
+F 0 "U?" H 5150 3700 60  0000 C CNN
+F 1 "MCP73871" H 5700 3700 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 5500 4500 60  0001 C CNN
+F 3 "" H 5500 4500 60  0000 C CNN
+F 4 "DigiKey" H 5500 4350 60  0001 C CNN "Distributor"
+F 5 "MCP73871-2CCI/ML-ND" H 5500 4350 60  0001 C CNN "Distributor #"
+	1    5500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55D0C668
+P 6250 5300
+F 0 "#PWR?" H 6250 5050 50  0001 C CNN
+F 1 "GND" H 6250 5150 50  0000 C CNN
+F 2 "" H 6250 5300 60  0000 C CNN
+F 3 "" H 6250 5300 60  0000 C CNN
+	1    6250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5300 6250 4600
+Wire Wire Line
+	6250 4600 6100 4600
+$Comp
+L Res R?
+U 1 1 55D0C670
+P 6450 4500
+F 0 "R?" H 6450 4400 60  0000 C CNN
+F 1 "Res" H 6450 4600 60  0000 C CNN
+F 2 "" H 6450 4500 60  0000 C CNN
+F 3 "" H 6450 4500 60  0000 C CNN
+	1    6450 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0C676
+P 6750 4500
+F 0 "R?" H 6750 4400 60  0000 C CNN
+F 1 "Res" H 6750 4600 60  0000 C CNN
+F 2 "" H 6750 4500 60  0000 C CNN
+F 3 "" H 6750 4500 60  0000 C CNN
+	1    6750 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 4300 6450 4300
+Wire Wire Line
+	6450 4300 6450 4350
+Wire Wire Line
+	6100 4200 6750 4200
+Wire Wire Line
+	6750 4200 6750 4350
+$Comp
+L GND #PWR?
+U 1 1 55D0C680
+P 6450 5300
+F 0 "#PWR?" H 6450 5050 50  0001 C CNN
+F 1 "GND" H 6450 5150 50  0000 C CNN
+F 2 "" H 6450 5300 60  0000 C CNN
+F 3 "" H 6450 5300 60  0000 C CNN
+	1    6450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55D0C686
+P 6750 5300
+F 0 "#PWR?" H 6750 5050 50  0001 C CNN
+F 1 "GND" H 6750 5150 50  0000 C CNN
+F 2 "" H 6750 5300 60  0000 C CNN
+F 3 "" H 6750 5300 60  0000 C CNN
+	1    6750 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5300 6450 4650
+Wire Wire Line
+	6750 5300 6750 4650
+$Comp
+L GND #PWR?
+U 1 1 55D0C68E
+P 7050 5300
+F 0 "#PWR?" H 7050 5050 50  0001 C CNN
+F 1 "GND" H 7050 5150 50  0000 C CNN
+F 2 "" H 7050 5300 60  0000 C CNN
+F 3 "" H 7050 5300 60  0000 C CNN
+	1    7050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4350 7050 4100
+Wire Wire Line
+	7050 4100 6100 4100
+$Comp
+L Li-ion(2Cell) B?
+U 1 1 55D0C696
+P 7600 4400
+F 0 "B?" H 7425 4175 60  0000 C CNN
+F 1 "Li-ion(2Cell)" H 8000 4175 60  0000 C CNN
+F 2 "" H 7600 4400 60  0000 C CNN
+F 3 "" H 7600 4400 60  0000 C CNN
+	1    7600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3900 7650 3900
+Wire Wire Line
+	7650 3900 7650 4100
+$Comp
+L GND #PWR?
+U 1 1 55D0C69E
+P 7650 5300
+F 0 "#PWR?" H 7650 5050 50  0001 C CNN
+F 1 "GND" H 7650 5150 50  0000 C CNN
+F 2 "" H 7650 5300 60  0000 C CNN
+F 3 "" H 7650 5300 60  0000 C CNN
+	1    7650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5300 7650 4700
+Wire Wire Line
+	6100 3800 8750 3800
+$Comp
+L Res R?
+U 1 1 55D0C6AD
+P 4650 4000
+F 0 "R?" H 4650 3900 60  0000 C CNN
+F 1 "1k" H 4650 4100 60  0000 C CNN
+F 2 "" H 4650 4000 60  0000 C CNN
+F 3 "" H 4650 4000 60  0000 C CNN
+	1    4650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4000 4900 4000
+Wire Wire Line
+	2950 3800 4900 3800
+Wire Wire Line
+	4450 3800 4450 4000
+Wire Wire Line
+	4450 4000 4500 4000
+Wire Wire Line
+	4900 4150 4250 4150
+Wire Wire Line
+	4900 4250 4250 4250
+Text HLabel 4250 4150 0    60   Input ~ 0
+BAT2-Stat2
+Text HLabel 4250 4250 0    60   Input ~ 0
+BAT2-Stat1
+Wire Wire Line
+	4900 4350 4700 4350
+Wire Wire Line
+	4700 4350 4700 4650
+Wire Wire Line
+	4700 4650 4900 4650
+Wire Wire Line
+	4900 4550 4700 4550
+Connection ~ 4700 4550
+Wire Wire Line
+	4900 4450 4700 4450
+Connection ~ 4700 4450
+Wire Wire Line
+	3500 4500 4700 4500
+Connection ~ 4700 4500
+Wire Wire Line
+	3500 3800 3500 4550
+Connection ~ 4450 3800
+$Comp
+L Res R?
+U 1 1 55D0C6C6
+P 3500 4700
+F 0 "R?" H 3500 4600 60  0000 C CNN
+F 1 "270k" H 3500 4800 60  0000 C CNN
+F 2 "" H 3500 4700 60  0000 C CNN
+F 3 "" H 3500 4700 60  0000 C CNN
+	1    3500 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 4900 3500 4900
+Wire Wire Line
+	3500 4850 3500 4950
+Connection ~ 3500 4500
+$Comp
+L Res R?
+U 1 1 55D0C6CF
+P 3500 5100
+F 0 "R?" H 3500 5000 60  0000 C CNN
+F 1 "100k" H 3500 5200 60  0000 C CNN
+F 2 "" H 3500 5100 60  0000 C CNN
+F 3 "" H 3500 5100 60  0000 C CNN
+	1    3500 5100
+	0    1    1    0   
+$EndComp
+Connection ~ 3500 4900
+Wire Wire Line
+	3500 5250 3500 5300
+$Comp
+L GND #PWR?
+U 1 1 55D0C6D7
+P 3500 5300
+F 0 "#PWR?" H 3500 5050 50  0001 C CNN
+F 1 "GND" H 3500 5150 50  0000 C CNN
+F 2 "" H 3500 5300 60  0000 C CNN
+F 3 "" H 3500 5300 60  0000 C CNN
+	1    3500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0C6DD
+P 7050 4500
+F 0 "R?" H 7050 4400 60  0000 C CNN
+F 1 "1k" H 7050 4600 60  0000 C CNN
+F 2 "" H 7050 4500 60  0000 C CNN
+F 3 "" H 7050 4500 60  0000 C CNN
+	1    7050 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0C6E3
+P 7050 5000
+F 0 "R?" H 7050 4900 60  0000 C CNN
+F 1 "10k" H 7050 5100 60  0000 C CNN
+F 2 "" H 7050 5000 60  0000 C CNN
+F 3 "" H 7050 5000 60  0000 C CNN
+	1    7050 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Res R?
+U 1 1 55D0C6EB
+P 7350 5000
+F 0 "R?" H 7350 4900 60  0000 C CNN
+F 1 "NTC" H 7350 5100 60  0000 C CNN
+F 2 "" H 7350 5000 60  0000 C CNN
+F 3 "" H 7350 5000 60  0000 C CNN
+F 4 "DigiKey" H 7350 5000 60  0001 C CNN "Distributor"
+F 5 "~" H 7350 5000 60  0001 C CNN "Distributor #"
+	1    7350 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 4650 7050 4850
+Wire Wire Line
+	7050 5150 7050 5300
+$Comp
+L GND #PWR?
+U 1 1 55D0C6F3
+P 7350 5300
+F 0 "#PWR?" H 7350 5050 50  0001 C CNN
+F 1 "GND" H 7350 5150 50  0000 C CNN
+F 2 "" H 7350 5300 60  0000 C CNN
+F 3 "" H 7350 5300 60  0000 C CNN
+	1    7350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5300 7350 5150
+Wire Wire Line
+	7350 4850 7350 4750
+Wire Wire Line
+	7350 4750 7050 4750
+Connection ~ 7050 4750
+$Comp
+L Diode-Shottky D?
+U 1 1 55D0C740
+P 8750 3400
+F 0 "D?" H 8750 3500 60  0000 C CNN
+F 1 "Diode-Shottky" H 8750 3300 60  0000 C CNN
+F 2 "" H 8750 3400 60  0000 C CNN
+F 3 "" H 8750 3400 60  0000 C CNN
+	1    8750 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 3800 8750 3550
+Wire Wire Line
+	8750 3250 8750 2150
+Wire Wire Line
+	2950 3800 2950 1400
+Connection ~ 3500 1400
+Connection ~ 3500 3800
+Wire Wire Line
+	2950 2550 2300 2550
+Connection ~ 2950 2550
+Text HLabel 2300 2550 0    60   Input ~ 0
+Bat-In
+Wire Wire Line
+	8750 2650 9250 2650
+Connection ~ 8750 2650
+Text HLabel 9250 2650 2    60   Input ~ 0
+Bat-Out
+$EndSCHEMATC
