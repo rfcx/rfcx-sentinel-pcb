@@ -1,0 +1,54 @@
+Project:,Mainboard,,,,
+Tool:,kicad,,,,
+Number of Parts ,98,,,,
+ , ,,,,
+Reference,Quantity,Value,Package,Distributor,Distributor #
+F1,1,Fiducial,Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop,DigiKey,NA
+U1,1,FT232R,Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm,DigiKey,768-1007-1-ND
+"C2,C4",2,6pF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,311-1095-1-ND
+C15,1,39pF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,1276-1769-1-ND
+"C18,C17",2,47pF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,1276-1832-1-ND
+"C5,C6,C24,C22,C8,C7,C9",7,0.1uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,399-1167-1-ND
+C23,1,0.22uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,587-1287-1-ND
+"C3,C1,C14,C13,C12",5,1uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,1276-1275-1-ND
+C11,1,22uF Tant,Capacitors_SMD:C_0805_HandSoldering,DigiKey,511-1506-1-ND
+C16,1,68uF Tant,Capacitors_SMD:C_0805_HandSoldering,DigiKey,478-8414-1-ND
+FR1,1,Ferrite,Resistors_SMD:R_0805_HandSoldering,DigiKey,587-1911-1-ND
+"R43,R44",2,NTC,RFCx:JST-1.5mm,DigiKey,"BC2384-ND, BC2384-ND"
+"R2,R1",2,"0.51, 1W",Resistors_SMD:R_1210_HandSoldering,DigiKey,RCWE.51FCT-ND
+"R34,R33",2,27,Resistors_SMD:R_0805_HandSoldering,DigiKey,P27ACT-ND
+R30,1,49.9,Resistors_SMD:R_0805_HandSoldering,DigiKey,P49.9CCT-ND
+"R35,R36",2,270,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-270CRCT-ND
+R9,1,730,Resistors_SMD:R_0805_HandSoldering,DigiKey,P732CCT-ND
+"R7,R8,R46,R45",4,1k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.0KACT-ND 
+"R22,R28,R23,R39",4,1k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.0KACT-ND
+"R26,R27",2,1.14k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.15KCCT-ND
+"R10,R12",2,1540,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.54KCCT-ND
+"R11,R13",2,2100,Resistors_SMD:R_0805_HandSoldering,DigiKey,P2.10KCCT-ND
+"R16,R17",2,2550,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-2.55KCRCT-ND
+R3,1,4.7k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P10KACT-ND
+"R4,R6,R18,R38,R40,R42,R37,R41",8,10k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P10KACT-ND
+R32,1,49.9k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P49.9KCCT-ND
+"R24,R19,R25,R21",4,100k,Resistors_SMD:R_0805_HandSoldering,DigiKey,RHM100KCHCT-ND
+R31,1,150k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P150KCCT-ND
+"R14,R15,R29",3,200k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P200KACT-ND
+"R5,R20",2,270k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P270KCCT-ND
+"H1,H2,H3,H4",4,Mounting_Hole,RFCX:Mnt_Hole,DigiKey,NA
+L1,1,6.8uH,RFCX:Ind_6x6,DigiKey,SRN6045-6R8YCT-ND 
+D2,1,LED,RFCx:LED-1208,DigiKey,160-1404-1-ND
+D6,1,GRN,RFCx:LED-1208,DigiKey,350-2885-ND
+D7,1,YLW,RFCx:LED-1208,DigiKey,511-1275-1-ND
+"D5,D1,D3",3,1N5819,Diodes_SMD:SOD-123,DigiKey,1N5819HW-FDICT-ND
+P1,1,CONN_01X02,RFCX:TerminalBlock_2,DigiKey,ED2740-ND
+U2,1,ATmega328P,Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm,DigiKey,ATMEGA328P-AU-ND
+J1,1,ICSP,Pin_Headers:Pin_Header_Straight_2x03,DigiKey,S2011EC-03-ND
+"U3,U4",2,LTC6800,SSOP:MSOP-8_3x3mm_Pitch0.65mm,DigiKey,LTC6800HMS8#PBF-ND
+U5,1,ADS1015,Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm,DigiKey,296-25227-1-ND
+U9,1,LMR61428,SSOP:MSOP-8_3x3mm_Pitch0.65mm,DigiKey,LMR61428XMM/NOPBCT-ND
+U8,1,SM72238,SMD_Packages:DPAK-2,DigiKey,296-39811-5-ND 
+U11,1,LM75BDP,SSOP:MSOP-8_3x3mm_Pitch0.65mm,DigiKey,568-4768-1-ND
+U12,1,HIH6130,RFCX:HIH-SOIC-8,DigiKey,480-3651-1-ND 
+P2,1,USB_A,Connect:USB_A,DigiKey,UE27AC54100-ND
+"P3,P5,P4,P6",4,CONN_01X01,Connect:1pin,DigiKey,NA
+"U6,U7",2,MCP73871,Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm,DigiKey,MCP73871-2CCI/ML-ND
+X1,1,32kHz,RFCX:SOJ-4,DigiKey,300-8744-1-ND

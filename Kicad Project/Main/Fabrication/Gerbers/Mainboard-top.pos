@@ -1,0 +1,84 @@
+### Module positions - created on Mon 31 Aug 2015 10:16:47 AM EDT ###
+### Printed by Pcbnew version kicad (2015-08-13 BZR 6091, Git 3774262)-product
+## Unit = inches, Angle = deg.
+## Side : top
+# Ref    Val                  Package         PosX       PosY        Rot     Side
+C1       1uF              C_0805_HandSolde    6.1450    -3.4550      90.0    top
+C2       6pF              C_0805_HandSolde    5.9775    -3.7575     270.0    top
+C3       1uF              C_0805_HandSolde    6.8200    -3.5350       0.0    top
+C4       6pF              C_0805_HandSolde    6.2800    -3.7575     270.0    top
+C5       0.1uF            C_0805_HandSolde    4.6700    -4.1400       0.0    top
+C6       0.1uF            C_0805_HandSolde    4.8200    -3.1750      90.0    top
+C7       0.1uF            C_0805_HandSolde    4.9500    -3.9300      90.0    top
+C8       0.1uF            C_0805_HandSolde    5.0800    -4.5200       0.0    top
+C9       0.1uF            C_0805_HandSolde    5.3400    -3.9700      90.0    top
+C11      22uF Tant        C_0805_HandSolde    4.4450    -2.4100     270.0    top
+C12      1uF              C_0805_HandSolde    4.1400    -2.8600     270.0    top
+C13      1uF              C_0805_HandSolde    4.3750    -3.0800       0.0    top
+C14      1uF              C_0805_HandSolde    4.8450    -2.7400       0.0    top
+C15      39pF             C_0805_HandSolde    4.3450    -2.6500      90.0    top
+C16      68uF Tant        C_0805_HandSolde    4.9850    -2.4900      90.0    top
+C17      47pF             C_0805_HandSolde    5.4400    -3.9700      90.0    top
+C18      47pF             C_0805_HandSolde    5.3900    -4.5500     180.0    top
+C22      0.1uF            C_0805_HandSolde    6.7200    -2.7600     180.0    top
+C23      0.22uF           C_0805_HandSolde    6.8300    -2.2600     180.0    top
+C24      0.1uF            C_0805_HandSolde    6.6200    -2.2600       0.0    top
+D1       1N5819           SOD-123             5.2000    -2.6300     270.0    top
+D3       1N5819           SOD-123             5.8000    -2.6300     270.0    top
+D5       1N5819           SOD-123             4.8850    -2.4900      90.0    top
+FR1      Ferrite          R_0805_HandSolde    4.8900    -4.2100     270.0    top
+R1       0.51, 1W         R_1210_HandSolde    4.6700    -3.6550       0.0    top
+R2       0.51 ,1W         R_1210_HandSolde    4.6100    -3.4150       0.0    top
+R3       4.7k             R_0805_HandSolde    6.7200    -2.5800     180.0    top
+R4       10k              R_0805_HandSolde    6.7200    -2.6700     180.0    top
+R5       270k             R_0805_HandSolde    5.2000    -2.9200      90.0    top
+R6       10k              R_0805_HandSolde    6.9100    -3.6350       0.0    top
+R7       1k               R_0805_HandSolde    6.8000    -3.2550       0.0    top
+R8       1k               R_0805_HandSolde    6.6425    -3.1125      90.0    top
+R9       730              R_0805_HandSolde    6.5750    -3.9700     180.0    top
+R10      1540             R_0805_HandSolde    4.4400    -3.8300     270.0    top
+R11      2100             R_0805_HandSolde    4.3500    -3.8300      90.0    top
+R12      1540             R_0805_HandSolde    4.7000    -3.5250     180.0    top
+R13      2100             R_0805_HandSolde    4.5050    -3.5250     180.0    top
+R14      200k             R_0805_HandSolde    4.5400    -3.8300      90.0    top
+R15      200k             R_0805_HandSolde    4.7850    -3.3100       0.0    top
+R16      2550             R_0805_HandSolde    4.6700    -4.0500       0.0    top
+R17      2550             R_0805_HandSolde    4.7300    -3.1700      90.0    top
+R18      10k              R_0805_HandSolde    4.4200    -4.1600       0.0    top
+R19      100k             R_0805_HandSolde    5.1100    -2.9200     270.0    top
+R20      270k             R_0805_HandSolde    5.7600    -2.9100      90.0    top
+R21      100k             R_0805_HandSolde    5.6600    -2.9100     270.0    top
+R22      1k               R_0805_HandSolde    5.3700    -3.1800     180.0    top
+R23      1k               R_0805_HandSolde    5.9800    -3.1450     180.0    top
+R24      Res              R_0805_HandSolde    5.5500    -3.0300     270.0    top
+R25      Res              R_0805_HandSolde    6.2150    -2.9550       0.0    top
+R26      Res              R_0805_HandSolde    5.5500    -2.8300      90.0    top
+R27      Res              R_0805_HandSolde    6.2150    -2.8600       0.0    top
+R28      1k               R_0805_HandSolde    5.2000    -3.1200     270.0    top
+R29      200k             R_0805_HandSolde    4.6350    -2.6500     180.0    top
+R30      49.9             R_0805_HandSolde    4.8450    -2.6500     180.0    top
+R31      150k             R_0805_HandSolde    4.4450    -2.6500      90.0    top
+R32      49.9k            R_0805_HandSolde    4.3450    -2.4100      90.0    top
+R33      27               R_0805_HandSolde    5.4400    -4.3700      90.0    top
+R34      27               R_0805_HandSolde    5.4400    -4.1700     270.0    top
+R35      270              R_0805_HandSolde    5.3900    -3.7400     180.0    top
+R36      270              R_0805_HandSolde    5.3900    -3.8300     180.0    top
+R37      10k              R_0805_HandSolde    5.1100    -3.1200      90.0    top
+R38      10k              R_0805_HandSolde    6.9600    -2.8300     180.0    top
+R39      1k               R_0805_HandSolde    5.7600    -3.1169     270.0    top
+R40      10k              R_0805_HandSolde    6.9600    -2.9200       0.0    top
+R41      10k              R_0805_HandSolde    5.6600    -3.1169      90.0    top
+R42      10k              R_0805_HandSolde    6.9600    -3.0100       0.0    top
+R45      1k               R_0805_HandSolde    5.9250    -3.2850      90.0    top
+R46      1k               R_0805_HandSolde    6.4700    -3.8200     270.0    top
+U1       FT232R           SSOP-28_5.3x10.2    5.1600    -4.2800      90.0    top
+U2       ATmega328P       TQFP-32_7x7mm_Pi    6.4700    -3.4250       0.0    top
+U3       LTC6800          MSOP-8_3x3mm_Pit    4.6700    -3.8700     270.0    top
+U4       LTC6800          MSOP-8_3x3mm_Pit    4.6100    -3.2050      90.0    top
+U5       ADS1015          MSOP-10_3x3mm_Pi    4.4200    -4.0400     180.0    top
+U6       MCP73871         QFN-20-1EP_4x4mm    5.3754    -2.8846       0.0    top
+U7       MCP73871         QFN-20-1EP_4x4mm    5.9846    -2.8846       0.0    top
+U8       SM72238          DPAK-2              4.3600    -2.8900     270.0    top
+U9       LMR61428         MSOP-8_3x3mm_Pit    4.6350    -2.5200       0.0    top
+U11      LM75BDP          MSOP-8_3x3mm_Pit    6.7141    -2.8807       0.0    top
+## End
