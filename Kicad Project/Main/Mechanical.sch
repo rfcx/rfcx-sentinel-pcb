@@ -32,18 +32,19 @@ LIBS:Jdevices
 LIBS:JICs
 LIBS:JMech
 LIBS:Microcontrolers
+LIBS:Mainboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 6 8
 Title "Mechanical"
 Date "August 2015"
 Rev "C"
 Comp "Project Necromancer - Main Board"
 Comment1 "Designed By: Jesse Millwood"
-Comment2 "GVSU"
-Comment3 "Sponsors:"
+Comment2 ""
+Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
