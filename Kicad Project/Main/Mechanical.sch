@@ -51,8 +51,6 @@ $Comp
 L Mounting_Hole H1
 U 1 1 5594AADA
 P 4800 3600
-AR Path="/5594A1A6/5594AADA" Ref="H1"  Part="1" 
-AR Path="/5512C932/5594AADA" Ref="H1"  Part="1" 
 F 0 "H1" H 4790 3890 60  0000 C CNN
 F 1 "Mounting_Hole" H 4790 3300 60  0000 C CNN
 F 2 "RFCX:Mnt_Hole" H 4800 3600 60  0001 C CNN
@@ -66,8 +64,6 @@ $Comp
 L Mounting_Hole H2
 U 1 1 5594ACF2
 P 5575 3600
-AR Path="/5594A1A6/5594ACF2" Ref="H2"  Part="1" 
-AR Path="/5512C932/5594ACF2" Ref="H2"  Part="1" 
 F 0 "H2" H 5565 3890 60  0000 C CNN
 F 1 "Mounting_Hole" H 5565 3300 60  0000 C CNN
 F 2 "RFCX:Mnt_Hole" H 5575 3600 60  0001 C CNN
@@ -81,8 +77,6 @@ $Comp
 L Mounting_Hole H3
 U 1 1 5594AD59
 P 6350 3600
-AR Path="/5594A1A6/5594AD59" Ref="H3"  Part="1" 
-AR Path="/5512C932/5594AD59" Ref="H3"  Part="1" 
 F 0 "H3" H 6340 3890 60  0000 C CNN
 F 1 "Mounting_Hole" H 6340 3300 60  0000 C CNN
 F 2 "RFCX:Mnt_Hole" H 6350 3600 60  0001 C CNN
