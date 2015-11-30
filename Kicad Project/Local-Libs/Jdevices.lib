@@ -36,6 +36,25 @@ X ~ 2 150 0 79 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Cap-X2Y
+#
+DEF Cap-X2Y C 0 40 N Y 1 F N
+F0 "C" 0 -125 60 H V C CNN
+F1 "Cap-X2Y" 0 125 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 0 0  -100 0  -50 0 N
+P 2 0 0 0  50 50  50 -50 N
+P 2 0 0 0  100 0  50 0 N
+P 2 0 1 0  -50 50  -50 -50 N
+X ~ 1 -150 0 50 R 50 50 1 1 I
+X ~ 2 150 0 50 L 50 50 1 1 I
+X ~ 3 0 50 50 D 50 50 1 1 I
+X ~ 4 0 -50 50 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Crystal
 #
 DEF Crystal X 0 40 N Y 1 F N

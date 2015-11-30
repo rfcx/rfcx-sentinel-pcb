@@ -1,4 +1,4 @@
-update=Sun 22 Nov 2015 03:26:26 PM MST
+update=Sun 29 Nov 2015 11:15:27 PM MST
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,36 +6,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[pcbnew]
-version=1
-PageLayoutDescrFile=
-LastNetListRead=Mainboard.net
-UseCmpFile=0
-PadDrill=0.6
-PadDrillOvalY=0.6
-PadSizeH=1.5
-PadSizeV=1.5
-PcbTextSizeV=1.5
-PcbTextSizeH=1.5
-PcbTextThickness=0.3
-ModuleTextSizeV=1
-ModuleTextSizeH=1
-ModuleTextSizeThickness=0.15
-SolderMaskClearance=0
-SolderMaskMinWidth=0
-DrawSegmentWidth=0.2
-BoardOutlineThickness=0.09999999999999999
-ModuleOutlineThickness=0.15
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=../Local-Libs
@@ -73,3 +43,32 @@ LibName30=JICs
 LibName31=Microcontrolers
 LibName32=Jdevices
 LibName33=JMech
+[pcbnew]
+version=1
+PageLayoutDescrFile=/home/jesse/RFCx/rfcx-hardware-pcb/Kicad Project/rfcx-titleblock.kicad_wks
+LastNetListRead=Mainboard.net
+PadDrill=3.429
+PadDrillOvalY=3.429
+PadSizeH=3.429
+PadSizeV=3.429
+PcbTextSizeV=1.5
+PcbTextSizeH=1.5
+PcbTextThickness=0.3
+ModuleTextSizeV=1
+ModuleTextSizeH=1
+ModuleTextSizeThickness=0.15
+SolderMaskClearance=0
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.2
+BoardOutlineThickness=0.09999999999999999
+ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/jesse/RFCx/rfcx-hardware-pcb/Kicad Project/rfcx-titleblock.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

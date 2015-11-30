@@ -28,22 +28,22 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Jdevices
 LIBS:JICs
-LIBS:JMech
 LIBS:Microcontrolers
+LIBS:Jdevices
+LIBS:JMech
 LIBS:Mainboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "Top Level"
-Date "August 2015"
-Rev "C"
-Comp "Project Necromancer - Main Board"
-Comment1 "Designed By: Jesse Millwood"
-Comment2 ""
+Date "2015-11-29"
+Rev "3.1"
+Comp "The Rainforest Connection"
+Comment1 "Sentinel"
+Comment2 "Designed By: Jesse Millwood"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -384,4 +384,10 @@ Wire Wire Line
 	10650 3700 10150 3700
 Wire Wire Line
 	7300 1700 4450 1700
+$Sheet
+S 2350 5400 1000 850 
+U 565BB542
+F0 "Microphone Filter" 60
+F1 "MicFilter.sch" 60
+$EndSheet
 $EndSCHEMATC

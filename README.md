@@ -12,6 +12,7 @@ This repository is for the main board that includes the following functionality:
 - Charge two Lithium Ion Batteries
 - Take local measurements such as voltage, current, temperature, and humidity
 - Relay information to the phone via a USB interface
+- An experimental breakaway board for microphone filtering
 
 
 This README is meant to be a user guide for the **REV 3** main board. 
@@ -89,7 +90,8 @@ make install
 ## Conventions for this project
 - **Schematic Libraries:** The symbols in the `Local-Libs` libraries are to be used first. This is because I like how these symbols look. If the symbol is not there, use the symbols in `kicad-library`. If the symbol you are looking for isn't in any of those, make it your self, add it to the `Local-Libs` and make not of it in a pull request.
 - **Footprint Libraries:**
-- **PCB:** Editing of the PCB should be done in the GAL mode of `pcbnew`. This is because some things are handled slightly differently in the other canvases.
+- **PCB Canvas:** Editing of the PCB should be done in the GAL mode of `pcbnew`. This is because some things are handled slightly differently in the other canvases.
+- **
 - **Units:** Use Imperial units when editing/laying out so an object/trace is not located at some odd fraction of an inch.
 
 
