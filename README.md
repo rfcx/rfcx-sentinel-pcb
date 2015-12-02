@@ -31,30 +31,30 @@ The enclosure that is being used is the Polycase WP-33. The installer must take 
 Once the hardware connections are made it will be a good idea to ensure that the phone has the proper software installed such as the proper ROM and version of the Gaurdian app. For phone software refer to the [RFCx Guardian App](https://github.com/rfcx/rfcx-guardian-android) github page.
 
 ##Outline of Directories
-.
-├── Images
-│   ├── *Contains Images for the README*
-├── Kicad Project
-│   ├── Graphics
-│   │   ├── *Contains Graphics for the silk screen layer*
-│   ├── Graphics.pretty
-│   │   ├── *Contains `.kicad_mod` files to be placed on the silk screen layer*
-│   └── Main
-│       ├── *Contains schematic files (`.sch`) for the main board
-│       ├── Fabrication
-│       │   └── *Contains files for fabrication (Gerbers, BOM, Position, PDF)*
-│       │       Gerbers
-│       │       ├── *Contains Gerbers for the board manufacturers*
-│       │       Position
-│       │       ├── Inches
-│       │       │   ├── *Contains position file for top and bottom layers in inches*
-│       │       └── mm
-│       │           └── *Contains position file for top and bottom layers in mm*
-│       RFCx.pretty
-│       ├── *Contains module (footprint) files for components that needed to be made*
-│       Local-Libs
-│       └── *Contains schematic part libraries for parts that were made for this project*
-└── LICENSE
+.  
+├── Images  
+│   ├── *Contains Images for the README*  
+├── Kicad Project  
+│   ├── Graphics  
+│   │   ├── *Contains Graphics for the silk screen layer*  
+│   ├── Graphics.pretty  
+│   │   ├── *Contains `.kicad_mod` files to be placed on the silk screen layer*  
+│   └── Main  
+│       ├── *Contains schematic files (`.sch`) for the main board  
+│       ├── Fabrication  
+│       │   └── *Contains files for fabrication (Gerbers, BOM, Position, PDF)*  
+│       │       Gerbers  
+│       │       ├── *Contains Gerbers for the board manufacturers*  
+│       │       Position  
+│       │       ├── Inches  
+│       │       │   ├── *Contains position file for top and bottom layers in inches*  
+│       │       └── mm  
+│       │           └── *Contains position file for top and bottom layers in mm*  
+│       RFCx.pretty  
+│       ├── *Contains module (footprint) files for components that needed to be made*  
+│       Local-Libs  
+│       └── *Contains schematic part libraries for parts that were made for this project*  
+└── LICENSE  
     
 
 
@@ -89,10 +89,11 @@ make install
 
 ## Conventions for this project
 - **Schematic Libraries:** The symbols in the `Local-Libs` libraries are to be used first. This is because I like how these symbols look. If the symbol is not there, use the symbols in `kicad-library`. If the symbol you are looking for isn't in any of those, make it your self, add it to the `Local-Libs` and make not of it in a pull request.
-- **Footprint Libraries:**
+- **Footprint Libraries:** 
 - **PCB Canvas:** Editing of the PCB should be done in the GAL mode of `pcbnew`. This is because some things are handled slightly differently in the other canvases.
 - **
 - **Units:** Use Imperial units when editing/laying out so an object/trace is not located at some odd fraction of an inch.
+
 
 
 
