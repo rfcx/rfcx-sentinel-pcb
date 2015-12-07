@@ -1,65 +1,51 @@
-Project:,Mainboard,,,,
-Tool:,kicad,,,,
-Number of Parts ,107,,,,
- , ,,,,
-Reference,Quantity,Value,Package,Distributor,Distributor #
-F1,1,Fiducial,Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop,DigiKey,NA
-"C26,C27",2,Cap-X2Y,RFCx:C_0805_X2Y,DigiKey,709-1010-1-ND
-C28,1,DNP,Capacitors_ThroughHole:C_Radial_D5_L6_P2.5,DigiKey,NA
-"C2,C4",2,6pF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,311-1095-1-ND
-C11,1,10p,Capacitors_SMD:C_0805_HandSoldering,DigiKey,709-1168-1-ND
-"C23,C22",2,47pF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,1276-1832-1-ND
-C15,1,4700pF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,399-1155-1-ND
-C9,1,10nF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,490-1664-1-ND
-"C12,C8",2,68nF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,1276-1251-1-ND
-"C5,C6,C20,C18,C24,C21,C25",7,0.1uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,399-1167-1-ND
-C19,1,0.22uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,587-1287-1-ND
-"C3,C1,C13,C10",4,1uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,1276-1275-1-ND
-C14,1,4.7uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,490-3335-1-ND
-C7,1,10uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,490-5523-1-ND
-"C16,C17",2,22uF,Capacitors_SMD:C_0805_HandSoldering,DigiKey,490-9956-1-ND
-U14,1,3.5mm-Female-TH,RFCx:Audio_3.5mm_Feale_TH,DigiKey,CP-435107-ND
-FR1,1,Ferrite,Resistors_SMD:R_0805_HandSoldering,DigiKey,587-1911-1-ND
-"R46,R47",2,NTC,RFCx:JST-1.5mm,DigiKey,"BC2384-ND, 455-1657-ND"
-"R2,R1",2,"0.51, 1W",Resistors_SMD:R_1210_HandSoldering,DigiKey,RCWE.51FCT-ND
-"R29,R28",2,27,Resistors_SMD:R_0805_HandSoldering,DigiKey,P27ACT-ND
-R22,1,49.9,Resistors_SMD:R_0805_HandSoldering,DigiKey,P49.9CCT-ND
-"R30,R31",2,270,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-270CRCT-ND
-R10,1,730,Resistors_SMD:R_0805_HandSoldering,DigiKey,P732CCT-ND
-"R8,R9,R7,R6,R36,R42,R37,R44",8,1k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.0KACT-ND
-"R40,R41",2,1.14k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.15KCCT-ND
-"R11,R13",2,1540,Resistors_SMD:R_0805_HandSoldering,DigiKey,P1.54KCCT-ND
-"R12,R14",2,2100,Resistors_SMD:R_0805_HandSoldering,DigiKey,P2.10KCCT-ND
-"R17,R18",2,2550,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-2.55KCRCT-ND
-"R3,R4",2,4.7k,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-4.70KCRCT-ND
-"R5,R19,R25,R26,R27,R43,R45",7,10k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P10KACT-ND
-R20,1,21k,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-21.0KCRCT-ND
-R21,1,27.4k,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-27.4KCRCT-ND
-"R38,R33,R39,R35",4,100k,Resistors_SMD:R_0805_HandSoldering,DigiKey,RHM100KCHCT-ND
-"R15,R16",2,200k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P200KACT-ND
-"R32,R34",2,270k,Resistors_SMD:R_0805_HandSoldering,DigiKey,P270KCCT-ND
-R24,1,499k,Resistors_SMD:R_0805_HandSoldering,DigiKey,311-499KCRCT-ND
-R23,1,2M,Resistors_SMD:R_0805_HandSoldering,DigiKey,RMCF0805FT2M00CT-ND
-"H1,H2,H3,H4",4,Mounting_Hole,RFCX:Mnt_Hole,DigiKey,NA
-L1,1,68uH,RFCx:Ind-Wurth-12_1x11_4,DigiKey,732-2143-1-ND
-U13,1,3.5mm-Male-TH,RFCx:Audio_3.5mm_Male_TH,DigiKey,839-1239-ND
-D1,1,LED,RFCx:LED-1208,DigiKey,160-1404-1-ND
-D2,1,PMEG2010AEB,Diodes_SMD:SOD-523,DigiKey,568-6502-1-ND
-D5,1,RB161M-20,Diodes_SMD:SOD-123,DigiKey,RB161M-20CT-ND
-D3,1,GRN,RFCx:LED-1208,DigiKey,350-2885-ND
-D4,1,YLW,RFCx:LED-1208,DigiKey,511-1275-1-ND
-P1,1,CONN_01X02,RFCX:TerminalBlock_2,DigiKey,ED2740-ND
-U1,1,ATmega328P,Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm,DigiKey,ATMEGA328P-AU-ND
-J1,1,ICSP,Pin_Headers:Pin_Header_Straight_2x03,DigiKey,S2011EC-03-ND
-U12,1,Button_SPST_4,RFCx:SPST_4,DigiKey,450-1650-ND
-"U2,U3",2,LTC6800,Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm,DigiKey,LTC6800HMS8#PBF-ND
-U4,1,ADS1015,Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm,DigiKey,296-25227-1-ND
-U6,1,SM72238,TO_SOT_Packages_SMD:TO-252-2Lead,DigiKey,296-39811-5-ND 
-U5,1,LTC3114-1,Housings_SSOP:TSSOP-16-1EP_4.4x5mm_Pitch0.65mm,DigiKey,LTC3114EFE-1#PBF-ND
-U7,1,LM75BDP,Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm,DigiKey,568-4768-1-ND
-U8,1,HIH6130,RFCx:HIH-SOIC-8,DigiKey,480-3651-1-ND 
-P2,1,USB_A,Connect:USB_A,DigiKey,UE27AC54100-ND
-U9,1,FT232R,Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm,DigiKey,768-1007-1-ND
-"U10,U11",2,MCP73871,Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm,DigiKey,MCP73871-2CCI/ML-ND
-"B1,B2",2,Li-ion-2Cell-Conn,RFCx:JST-2mm,DigiKey,455-1704-ND
-X1,1,32kHz,RFCX:SOJ-4,DigiKey,300-8744-1-ND
+"Project:","Mainboard"
+"Tool:","kicad"
+"Number of Parts ","91"
+" "," "
+"Reference","Quantity","Value","Package","Distributor","Distributor #"
+"F1","1","Fiducial","Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop","DigiKey","NA"
+"C26,C27","2","Cap-X2Y","RFCx:C_0805_X2Y","DigiKey","709-1010-1-ND"
+"C28","1","DNP","Capacitors_ThroughHole:C_Radial_D5_L6_P2.5","DigiKey","NA"
+"C2,C4","2","6pF","Capacitors_SMD:C_0805_HandSoldering","DigiKey","311-1095-1-ND"
+"C23,C22","2","47pF","Capacitors_SMD:C_0805_HandSoldering","DigiKey","1276-1832-1-ND"
+"C5,C6,C20,C18,C24,C21,C25","7","0.1uF","Capacitors_SMD:C_0805_HandSoldering","DigiKey","399-1167-1-ND"
+"C19","1","0.22uF","Capacitors_SMD:C_0805_HandSoldering","DigiKey","587-1287-1-ND"
+"C3,C1,C13,C10","4","1uF","Capacitors_SMD:C_0805_HandSoldering","DigiKey","1276-1275-1-ND"
+"U14","1","3.5mm-Female-TH","RFCx:Audio_3.5mm_Feale_TH","DigiKey","CP-435107-ND"
+"FR1","1","Ferrite","Resistors_SMD:R_0805_HandSoldering","DigiKey","587-1911-1-ND"
+"R46,R47","2","NTC","RFCx:JST-1.5mm","DigiKey","BC2384-ND, 455-1657-ND"
+"R2,R1","2","0.51, 1W","Resistors_SMD:R_1210_HandSoldering","DigiKey","RCWE.51FCT-ND"
+"R29,R28","2","27","Resistors_SMD:R_0805_HandSoldering","DigiKey","P27ACT-ND"
+"R30,R31","2","270","Resistors_SMD:R_0805_HandSoldering","DigiKey","311-270CRCT-ND"
+"R10","1","730","Resistors_SMD:R_0805_HandSoldering","DigiKey","P732CCT-ND"
+"R8,R9,R7,R6,R36,R42,R37,R44","8","1k","Resistors_SMD:R_0805_HandSoldering","DigiKey","P1.0KACT-ND"
+"R40,R41","2","1.14k","Resistors_SMD:R_0805_HandSoldering","DigiKey","P1.15KCCT-ND"
+"R11,R13","2","1540","Resistors_SMD:R_0805_HandSoldering","DigiKey","P1.54KCCT-ND"
+"R12,R14","2","2100","Resistors_SMD:R_0805_HandSoldering","DigiKey","P2.10KCCT-ND"
+"R17,R18","2","2550","Resistors_SMD:R_0805_HandSoldering","DigiKey","311-2.55KCRCT-ND"
+"R3,R4","2","4.7k","Resistors_SMD:R_0805_HandSoldering","DigiKey","311-4.70KCRCT-ND"
+"R5,R19,R25,R26,R27,R43,R45","7","10k","Resistors_SMD:R_0805_HandSoldering","DigiKey","P10KACT-ND"
+"R38,R33,R39,R35","4","100k","Resistors_SMD:R_0805_HandSoldering","DigiKey","RHM100KCHCT-ND"
+"R15,R16","2","200k","Resistors_SMD:R_0805_HandSoldering","DigiKey","P200KACT-ND"
+"R32,R34","2","270k","Resistors_SMD:R_0805_HandSoldering","DigiKey","P270KCCT-ND"
+"H1,H2,H3,H4","4","Mounting_Hole","RFCX:Mnt_Hole","DigiKey","NA"
+"U13","1","3.5mm-Male-TH","RFCx:Audio_3.5mm_Male_TH","DigiKey","839-1239-ND"
+"D1","1","LED","RFCx:LED-1208","DigiKey","160-1404-1-ND"
+"D5","1","RB161M-20","Diodes_SMD:SOD-123","DigiKey","RB161M-20CT-ND"
+"D3","1","GRN","RFCx:LED-1208","DigiKey","350-2885-ND"
+"D4","1","YLW","RFCx:LED-1208","DigiKey","511-1275-1-ND"
+"P1","1","CONN_01X02","RFCX:TerminalBlock_2","DigiKey","ED2740-ND"
+"U1","1","ATmega328P","Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm","DigiKey","ATMEGA328P-AU-ND"
+"J1","1","ICSP","Pin_Headers:Pin_Header_Straight_2x03","DigiKey","S2011EC-03-ND"
+"U12","1","Button_SPST_4","RFCx:SPST_4","DigiKey","450-1650-ND"
+"U2,U3","2","LTC6800","Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm","DigiKey","LTC6800HMS8#PBF-ND"
+"U4","1","ADS1015","Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm","DigiKey","296-25227-1-ND"
+"U6","1","SM72238","TO_SOT_Packages_SMD:TO-252-2Lead","DigiKey","296-39811-5-ND "
+"U5","1","DC-DC_Boost_Module","RFCx:DC-DC_Boost_Module","DigiKey","NA"
+"U7","1","LM75BDP","Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm","DigiKey","568-4768-1-ND"
+"U8","1","HIH6130","RFCx:HIH-SOIC-8","DigiKey","480-3651-1-ND "
+"P2","1","USB_A","Connect:USB_A","DigiKey","UE27AC54100-ND"
+"U9","1","FT232R","Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm","DigiKey","768-1007-1-ND"
+"U10,U11","2","MCP73871","Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm","DigiKey","MCP73871-2CCI/ML-ND"
+"B1,B2","2","Li-ion-2Cell-Conn","RFCx:JST-2mm","DigiKey","455-1704-ND"
+"X1","1","32kHz","RFCX:SOJ-4","DigiKey","300-8744-1-ND"
